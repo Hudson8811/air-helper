@@ -1096,7 +1096,6 @@ button{
             border-radius: 4px;
     outline: none;
     position: relative;
-    z-index: 1;
 }
 
 .helper__refresh:hover{

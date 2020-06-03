@@ -1096,7 +1096,6 @@ button{
             border-radius: 4px;
     outline: none;
     position: relative;
-    z-index: 1;
 }
 
 .helper__refresh:hover{
@@ -1725,7 +1724,7 @@ button{
 }
 
 .upload-file__label{
-    background: none;
+    background: transparent;
     padding: 8px 24px;
     display: -webkit-inline-box;
     display: -webkit-inline-flex;
@@ -1752,7 +1751,6 @@ button{
     -moz-transition: all .4s ease;
     transition: all .4s ease;
     cursor: pointer;
-    z-index: 1;
 }
 
 .upload-file__label:hover{
@@ -2459,47 +2457,34 @@ button{
 }
 */
 
-.mCSB_inside.mCS-custom>.mCSB_container{
-margin-right: 4px;
+#mCSB_1_scrollbar_vertical.mCSB_scrollTools.mCSB_1_scrollbar.mCS-custom.mCSB_scrollTools_vertical {
+
 }
-.mCSB_scrollTools.mCS-custom .mCSB_dragger_bar {
-    margin-right: 0;
+#mCSB_1_scrollbar_vertical.mCSB_scrollTools.mCSB_1_scrollbar.mCS-custom.mCSB_scrollTools_vertical .mCSB_draggerContainer {
+
+}
+#mCSB_1_scrollbar_vertical.mCSB_scrollTools.mCSB_1_scrollbar.mCS-custom.mCSB_scrollTools_vertical .mCSB_draggerContainer #mCSB_1_dragger_vertical.mCSB_dragger {
+
+}
+#mCSB_1_scrollbar_vertical.mCSB_scrollTools.mCSB_1_scrollbar.mCS-custom.mCSB_scrollTools_vertical .mCSB_draggerContainer #mCSB_1_dragger_vertical.mCSB_dragger .mCSB_dragger_bar {
     width: 4px;
-    background: rgba(114,120,133,.5);
+    background: rgb(114,120,133,.5);
     border: 0 none #ffffff;
     -webkit-border-radius: 4px;
             border-radius: 4px;
 }
+#mCSB_1_scrollbar_vertical.mCSB_scrollTools.mCSB_1_scrollbar.mCS-custom.mCSB_scrollTools_vertical .mCSB_draggerContainer .mCSB_draggerRail {
 
-
-.mCSB_scrollTools.mCS-custom{
-    opacity: 1;
-}
-
-.mCSB_scrollTools.mCS-custom .mCSB_draggerRail{
-margin-right: 0;
-background: rgba(0,0,0,.2);
-width: 4px;
--webkit-border-radius: 4px;
-        border-radius: 4px;
 }
 
 
 
 
-.mCSB_scrollTools.mCS-custom:hover  .mCSB_dragger_bar{
-
-    background: rgb(114,120,133,1);
-}
-.mCSB_scrollTools.mCS-custom .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar, .mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar {
-
-    background: rgb(114,120,133,1);
-}
 
 
 
 .mailing__nav-btn{
-    background: none;
+    background: transparent;
     margin-bottom: 32px;
     padding: 21px 16px;
     display: -webkit-inline-box;
@@ -2533,7 +2518,6 @@ width: 4px;
     -moz-transition: all .4s ease;
     transition: all .4s ease;
     cursor: pointer;
-    z-index:1;
 }
 
 .mailing__nav-btn:hover{
@@ -2558,14 +2542,10 @@ width: 4px;
 }
 
 .mailing__nav-btn:before{
-    background: rgb(208,69,174);
-    background: -moz-linear-gradient(200deg, rgba(208,69,174,1) 0%, rgba(71,60,194,1) 100%);
-    background: -webkit-linear-gradient(200deg, rgba(208,69,174,1) 0%, rgba(71,60,194,1) 100%);
-    background: linear-gradient(200deg, rgba(208,69,174,1) 0%, rgba(71,60,194,1) 100%);
-
-
-
-
+    background: -webkit-linear-gradient(250deg, #D045AE 0%, #473CC2 100%);
+    background: -moz-linear-gradient(250deg, #D045AE 0%, #473CC2 100%);
+    background: -o-linear-gradient(250deg, #D045AE 0%, #473CC2 100%);
+    background: linear-gradient(200deg, #D045AE 0%, #473CC2 100%);
     width: 100%;
     height: 100%;
     top: 0;

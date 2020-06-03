@@ -2,43 +2,28 @@ $(document).ready(function(){
     // helper toggle
     $('.helper-item__header').click(function(){
         $(this).parent('.helper-item').toggleClass('helper-item--show');
-        $(this).siblings('.helper-item__dropdown').stop(true, true).slideToggle(220);
+        $(this).siblings('.helper-item__dropdown').slideToggle(220);
     });
 
 
 
     // file upload
-    $('.js-upload-input').on('change', function() {
-        var splittedFakePath = this.value.split('\\');
+    $('.js-upload-input').on('change', function() { 
+        var splittedFakePath = this.value.split('\\'); 
         $(this).siblings('.upload-file__label').toggleClass('is-hide');
         $(this).siblings('.upload-file__result').toggleClass('is-show');
-        $(this).siblings('.upload-file__result').find('.upload-file__title').text(splittedFakePath[splittedFakePath.length - 1]);
+        $(this).siblings('.upload-file__result').find('.upload-file__title').text(splittedFakePath[splittedFakePath.length - 1]); 
         $(this).siblings('.upload-file__result').append('<div class="js-delete-upload btn-delete upload-file__delete"><span class="icon-close btn-delete__icon"></span></div>');
     });
 
 
     // range slider
-    if($('.js-range-slider').length>0){
-        $('.js-range-slider').ionRangeSlider();
-    }
+    $('.js-range-slider').ionRangeSlider();
 
 
 
     // date & time picker
-
-    if($('.js-picke').length>0){
-        $('.js-picker').datetimepicker();
-    }
-
-
-
-
-    if($('.js-mailing__nav-wrap').length>0){
-        $('.js-mailing__nav-wrap').mCustomScrollbar({
-            theme:'custom',
-            mouseWheel:{ deltaFactor: 'auto' }
-        });
-    }
+    $('.js-picker').datetimepicker();
 
 
 
@@ -120,7 +105,7 @@ if (typeof c !== 'undefined') {
         this.r = Math.random() * Math.PI;
         this.shadow_length = 2000;
         this.color = colors[Math.floor((Math.random() * colors.length))];
-
+      
         this.getDots = function() {
 
             var full = (Math.PI * 2) / 4;
@@ -238,7 +223,7 @@ if (typeof c !== 'undefined') {
 
     function collisionDetection(b){
         for (var i = boxes.length - 1; i >= 0; i--) {
-            if(i != b){
+            if(i != b){ 
                 var dx = (boxes[b].x + boxes[b].half_size) - (boxes[i].x + boxes[i].half_size);
                 var dy = (boxes[b].y + boxes[b].half_size) - (boxes[i].y + boxes[i].half_size);
                 var d = Math.sqrt(dx * dx + dy * dy);

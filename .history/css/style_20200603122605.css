@@ -1096,7 +1096,6 @@ button{
             border-radius: 4px;
     outline: none;
     position: relative;
-    z-index: 1;
 }
 
 .helper__refresh:hover{
@@ -1725,7 +1724,7 @@ button{
 }
 
 .upload-file__label{
-    background: none;
+    background: transparent;
     padding: 8px 24px;
     display: -webkit-inline-box;
     display: -webkit-inline-flex;
@@ -1752,7 +1751,6 @@ button{
     -moz-transition: all .4s ease;
     transition: all .4s ease;
     cursor: pointer;
-    z-index: 1;
 }
 
 .upload-file__label:hover{
@@ -2534,6 +2532,9 @@ width: 4px;
     transition: all .4s ease;
     cursor: pointer;
     z-index:1;
+    -webkit-box-shadow: 0 0 32px rgba(208,69,174,.5);
+       -moz-box-shadow: 0 0 32px rgba(208,69,174,.5);
+            box-shadow: 0 0 32px rgba(208,69,174,.5);
 }
 
 .mailing__nav-btn:hover{

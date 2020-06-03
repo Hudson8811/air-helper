@@ -25,20 +25,7 @@ $(document).ready(function(){
 
 
     // date & time picker
-
-    if($('.js-picke').length>0){
-        $('.js-picker').datetimepicker();
-    }
-
-
-
-
-    if($('.js-mailing__nav-wrap').length>0){
-        $('.js-mailing__nav-wrap').mCustomScrollbar({
-            theme:'custom',
-            mouseWheel:{ deltaFactor: 'auto' }
-        });
-    }
+    $('.js-picker').datetimepicker();
 
 
 

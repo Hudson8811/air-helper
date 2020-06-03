@@ -1096,7 +1096,6 @@ button{
             border-radius: 4px;
     outline: none;
     position: relative;
-    z-index: 1;
 }
 
 .helper__refresh:hover{
@@ -1725,7 +1724,7 @@ button{
 }
 
 .upload-file__label{
-    background: none;
+    background: transparent;
     padding: 8px 24px;
     display: -webkit-inline-box;
     display: -webkit-inline-flex;
@@ -1752,7 +1751,6 @@ button{
     -moz-transition: all .4s ease;
     transition: all .4s ease;
     cursor: pointer;
-    z-index: 1;
 }
 
 .upload-file__label:hover{
@@ -2499,7 +2497,7 @@ width: 4px;
 
 
 .mailing__nav-btn{
-    background: none;
+    background: transparent;
     margin-bottom: 32px;
     padding: 21px 16px;
     display: -webkit-inline-box;
@@ -2533,7 +2531,6 @@ width: 4px;
     -moz-transition: all .4s ease;
     transition: all .4s ease;
     cursor: pointer;
-    z-index:1;
 }
 
 .mailing__nav-btn:hover{
@@ -2558,14 +2555,10 @@ width: 4px;
 }
 
 .mailing__nav-btn:before{
-    background: rgb(208,69,174);
-    background: -moz-linear-gradient(200deg, rgba(208,69,174,1) 0%, rgba(71,60,194,1) 100%);
-    background: -webkit-linear-gradient(200deg, rgba(208,69,174,1) 0%, rgba(71,60,194,1) 100%);
-    background: linear-gradient(200deg, rgba(208,69,174,1) 0%, rgba(71,60,194,1) 100%);
-
-
-
-
+    background: -webkit-linear-gradient(250deg, #D045AE 0%, #473CC2 100%);
+    background: -moz-linear-gradient(250deg, #D045AE 0%, #473CC2 100%);
+    background: -o-linear-gradient(250deg, #D045AE 0%, #473CC2 100%);
+    background: linear-gradient(200deg, #D045AE 0%, #473CC2 100%);
     width: 100%;
     height: 100%;
     top: 0;

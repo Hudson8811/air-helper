@@ -36,7 +36,7 @@ $(document).ready(function(){
     if($('.js-mailing__nav-wrap').length>0){
         $('.js-mailing__nav-wrap').mCustomScrollbar({
             theme:'custom',
-            mouseWheel:{ deltaFactor: 'auto' }
+            mouseWheel:{ normalizeDelta: true }
         });
     }
 
