@@ -346,6 +346,9 @@
             -ms-flex-preferred-size: 28vw;
                 flex-basis: 28vw;
     }
+    .appeal-link__arrow{
+        display: none;
+    }
     .mailing__block,
     .editor{
         padding: 16px;

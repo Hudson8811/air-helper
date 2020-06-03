@@ -32,7 +32,7 @@ $(document).ready(function(){
 
 
     $('.appeal-link__arrow').click(function(){
-        $('.appeal-link').fadeOut(300);
+        $('.appeal-link').slideUp(300);
     });
 
     if($('.js-mailing__nav-wrap').length>0){

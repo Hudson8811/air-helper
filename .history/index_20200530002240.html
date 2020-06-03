@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, user-scalable=0">
-<title>step 1</title>
+<title>Главная</title>
 <link href="css/style.css?v=204" type="text/css" rel="stylesheet">
 <link href="css/media.css?v=204" type="text/css" rel="stylesheet">
 <script src="js/jquery-3.2.1.min.js"></script>
@@ -43,18 +43,24 @@
         </nav>
       </div>
       <div class="header__content">
-        <h1 class="title title--size_1 header__title">Тестируйте ваши письма на&nbsp;спам</h1>
+        <h1 class="title title--size_1 header__title">Тестируйте ваши письма на cпам</h1>
         <p class="header__description">AIR mailer поможет выявлять и устранять проблемы с доставкой писем, чтобы они доходили до ваших клиентов. Это бесплатно</p>
       </div>
     </header>
-    <div class="site__process">
-      <div class="site__process-title">процесс проверки..</div>
-      <div class="process site__process-body">
-        <div class="process__current" style="width: 60%;">
-          <span class="icon-send process__current-icon"></span>
+    <form action="#" class="form form--mw-520 site__form">
+      <div class="form__header">
+        <p class="form__header-title">1. Отправьте письмо на сгенерированную для вас почту:</p>
+        <div class="form__header-action">
+          <input type="email" name="email" autocomplete="off" required class="input form__header-action-input" placeholder="Почта" value="st-3-1vpf8tbxu0@glockapps.com">
+          <button class="form__header-action-btn-copy">
+            <span class="icon-copy form__header-action-btn-copy-icon"></span>
+          </button>
         </div>
       </div>
-    </div>
+      <button type="submit" class="btn form__btn">
+        <span class="btn__text">2. После отправки письма нажмите сюда</span>
+      </button>
+    </form>
   </div>
 </div>
 <!-- site END -->

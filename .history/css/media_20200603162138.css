@@ -329,12 +329,8 @@
 }
 @media (max-width: 470px){
 .appeal-link {
-    padding-right: 40px;
-}
-.appeal-link__arrow{
-    right: 5px;
-}
-}
+    padding-right: 50px;
+}}
 @media (max-width: 420px){
     .appeal-link{
         font-size: 12px;
@@ -345,6 +341,9 @@
         -webkit-flex-basis: 28vw;
             -ms-flex-preferred-size: 28vw;
                 flex-basis: 28vw;
+    }
+    .appeal-link__arrow{
+        display: none;
     }
     .mailing__block,
     .editor{

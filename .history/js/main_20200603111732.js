@@ -31,9 +31,7 @@ $(document).ready(function(){
     }
 
 
-    $('.appeal-link__arrow').click(function(){
-        $('.appeal-link').fadeOut(300);
-    });
+
 
     if($('.js-mailing__nav-wrap').length>0){
         $('.js-mailing__nav-wrap').mCustomScrollbar({
