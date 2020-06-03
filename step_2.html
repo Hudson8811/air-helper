@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, user-scalable=0">
+<title>step 2</title>
+<link href="css/style.css?v=204" type="text/css" rel="stylesheet">
+<link href="css/media.css?v=204" type="text/css" rel="stylesheet">
+<script src="js/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+
+<!-- site BEGIN -->
+<div id="site">
+  <canvas id="bg-animated"></canvas>
+  <a href="#" class="appeal-link">
+    <img src="images/airmailer-logo--white.svg" alt="airmailer" class="appeal-link__logo"> Мгновенно связывайтесь<br>с вашими клиентами <span class="icon-arrow appeal-link__arrow"></span>
+  </a>
+  <div class="site">
+    <header class="header">
+      <div class="header__left">
+        <nav class="nav header__nav" role="navigation">
+          <button class="nav__toggle">
+            <span class="icon-dotted nav__toggle-icon"></span>
+          </button>
+          <ul class="nav__dropdown">
+            <li class="nav__item">
+              <a href="#" class="nav__link nav__link--current">
+                <img src="images/airmailer-logo--gradient.svg" alt="airmailer" class="nav__logo">
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">
+                <img src="images/checkermailer-logo--gradient.svg" alt="checkermailer" class="nav__logo">
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">
+                <img src="images/testermailer-logo--gradient.svg" alt="testermailer" class="nav__logo">
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header__content">
+        <h1 class="title title--size_1 header__title">Ваше письмо почти идеально!</h1>
+      </div>
+    </header>
+    <div class="helper site__helper">
+      <div class="helper__header">
+        <div class="helper__header-left">
+          <div class="helper-nav">
+            <p class="subtitle helper-nav__title">Мои проверки</p>
+            <div class="helper-nav__body">
+              <a class="helper-nav__btn helper-nav__btn--prev">
+                <span class="icon-arrow helper-nav__btn-arrow"></span>
+              </a>
+              <div class="helper-nav__dots">
+                <a class="dot dot--level_1 helper-nav__dot"></a>
+                <a class="dot dot--level_2 helper-nav__dot"></a>
+                <a class="dot dot--level_3 helper-nav__dot"></a>
+                <a class="dot dot--level_4 helper-nav__dot"></a>
+                <a class="dot dot--level_5 dot--current helper-nav__dot"></a>
+              </div>
+              <a class="helper-nav__btn helper-nav__btn--disabled helper-nav__btn--next">
+                <span class="icon-arrow helper-nav__btn-arrow"></span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="helper__header-center">
+          <div class="evaluation helper__header-evaluation">8.2 / 10</div>
+        </div>
+        <div class="helper__header-right">
+          <div class="subtitle">Ссылка на результат:</div>
+          <a href="#" class="helper__header-link">glockapps.com/st-3-1vpf8tbxu0</a>
+        </div>
+      </div>
+      <div class="helper__time">Получено: 2 минут назад</div>
+      <a class="helper__refresh">
+        <span class="icon-refresh helper__refresh-icon"></span> Обновить результат
+      </a>
+      <div class="helper__list">
+        <div class="helper-item">
+          <div class="helper-item__header">
+            <span class="helper-item__header-icon"></span>
+            <div class="helper-item__header-title">Кликните здесь для просмотра Вашего письма</div>
+            <span class="helper-item__header-status">
+              <span class="icon-checked helper-item__header-status-checked helper-item__header-status-checked--green"></span>
+            </span>
+          </div>
+          <div class="helper-item__dropdown">
+            <div class="helper-item__content">Мы проверяем подлинность сервера, с которого отправлено письмо</div>
+            <div class="helper-item">
+              <div class="helper-item__header">
+                <span class="helper-item__header-icon"></span>
+                <div class="helper-item__header-title">[SPF] Ваш сервер 209.85.215.182 имеет право использовать okeymaxim@gmail.com</div>
+                <span class="helper-item__header-status">
+                  <span class="icon-checked helper-item__header-status-checked helper-item__header-status-checked--green"></span>
+                </span>
+              </div>
+              <div class="helper-item__dropdown">
+                <div class="helper-item__content">
+                  <p>Политика DMARC позволяет отправителю указать, что их электронные письма защищены SPF и / или DKIM, и дать инструкции, если ни один из этих методов проверки подлинности проходит. Пожалуйста, убедитесь, что у вас есть набор DKIM и SPF перед использованием DMARC.</p>
+                  <hr>
+                  <p>Ваша запись DMARC установлен правильно, и ваше сообщение прошло испытание DMARC<br>Запись DMARC DNS найдено для домена _dmarc.gmail.com:</p>
+                  <p>"v=DMARC1; p=none; sp=quarantine; rua=mailto:mailauth-reports@google.com"</p>
+                </div>
+              </div>
+            </div>
+            <div class="helper-item">
+              <div class="helper-item__header">
+                <span class="helper-item__header-icon"></span>
+                <div class="helper-item__header-title">Ваша DKIM подпись действительна</div>
+                <span class="helper-item__header-status">
+                  <span class="icon-checked helper-item__header-status-checked helper-item__header-status-checked--green"></span>
+                </span>
+              </div>
+              <div class="helper-item__dropdown">
+                <div class="helper-item__content">Мы проверяем подлинность сервера, с которого отправлено письмо</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="helper-item">
+          <div class="helper-item__header">
+            <span class="helper-item__header-icon"></span>
+            <div class="helper-item__header-title">Кликните здесь для просмотра Вашего письма</div>
+            <span class="helper-item__header-status">
+              <span class="status-count status-count--red">-1.8</span>
+            </span>
+          </div>
+          <div class="helper-item__dropdown">
+            <div class="helper-item__content">Мы проверяем подлинность сервера, с которого отправлено письмо</div>
+            <div class="helper-item">
+              <div class="helper-item__header">
+                <span class="helper-item__header-icon"></span>
+                <div class="helper-item__header-title">[SPF] Ваш сервер 209.85.215.182 имеет право использовать okeymaxim@gmail.com</div>
+                <span class="helper-item__header-status">
+                  <span class="icon-checked helper-item__header-status-checked helper-item__header-status-checked--green"></span>
+                </span>
+              </div>
+              <div class="helper-item__dropdown">
+                <div class="helper-item__content">
+                  <p>Политика DMARC позволяет отправителю указать, что их электронные письма защищены SPF и / или DKIM, и дать инструкции, если ни один из этих методов проверки подлинности проходит. Пожалуйста, убедитесь, что у вас есть набор DKIM и SPF перед использованием DMARC.</p>
+                  <hr>
+                  <p>Ваша запись DMARC установлен правильно, и ваше сообщение прошло испытание DMARC<br>Запись DMARC DNS найдено для домена _dmarc.gmail.com:</p>
+                  <p>"v=DMARC1; p=none; sp=quarantine; rua=mailto:mailauth-reports@google.com"</p>
+                </div>
+              </div>
+            </div>
+            <div class="helper-item">
+              <div class="helper-item__header">
+                <span class="helper-item__header-icon"></span>
+                <div class="helper-item__header-title">Ваша DKIM подпись действительна</div>
+                <span class="helper-item__header-status">
+                  <span class="icon-checked helper-item__header-status-checked helper-item__header-status-checked--green"></span>
+                </span>
+              </div>
+              <div class="helper-item__dropdown">
+                <div class="helper-item__content">Мы проверяем подлинность сервера, с которого отправлено письмо</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="helper-item">
+          <div class="helper-item__header">
+            <span class="helper-item__header-icon"></span>
+            <div class="helper-item__header-title">Кликните здесь для просмотра Вашего письма</div>
+            <span class="helper-item__header-status">
+              <span class="status-count status-count--green">-1.8</span>
+            </span>
+          </div>
+          <div class="helper-item__dropdown">
+            <div class="helper-item__content">Мы проверяем подлинность сервера, с которого отправлено письмо</div>
+            <div class="helper-item">
+              <div class="helper-item__header">
+                <span class="helper-item__header-icon"></span>
+                <div class="helper-item__header-title">[SPF] Ваш сервер 209.85.215.182 имеет право использовать okeymaxim@gmail.com</div>
+                <span class="helper-item__header-status">
+                  <span class="icon-checked helper-item__header-status-checked helper-item__header-status-checked--green"></span>
+                </span>
+              </div>
+              <div class="helper-item__dropdown">
+                <div class="helper-item__content">
+                  <p>Политика DMARC позволяет отправителю указать, что их электронные письма защищены SPF и / или DKIM, и дать инструкции, если ни один из этих методов проверки подлинности проходит. Пожалуйста, убедитесь, что у вас есть набор DKIM и SPF перед использованием DMARC.</p>
+                  <hr>
+                  <p>Ваша запись DMARC установлен правильно, и ваше сообщение прошло испытание DMARC<br>Запись DMARC DNS найдено для домена _dmarc.gmail.com:</p>
+                  <p>"v=DMARC1; p=none; sp=quarantine; rua=mailto:mailauth-reports@google.com"</p>
+                </div>
+              </div>
+            </div>
+            <div class="helper-item">
+              <div class="helper-item__header">
+                <span class="helper-item__header-icon"></span>
+                <div class="helper-item__header-title">Ваша DKIM подпись действительна</div>
+                <span class="helper-item__header-status">
+                  <span class="icon-checked helper-item__header-status-checked helper-item__header-status-checked--green"></span>
+                </span>
+              </div>
+              <div class="helper-item__dropdown">
+                <div class="helper-item__content">Мы проверяем подлинность сервера, с которого отправлено письмо</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="helper-item">
+          <div class="helper-item__header">
+            <span class="helper-item__header-icon"></span>
+            <div class="helper-item__header-title">Кликните здесь для просмотра Вашего письма</div>
+            <span class="helper-item__header-status">
+              <span class="status-count status-count--yellow">-1.8</span>
+            </span>
+          </div>
+          <div class="helper-item__dropdown">
+            <div class="helper-item__content">Мы проверяем подлинность сервера, с которого отправлено письмо</div>
+            <div class="helper-item">
+              <div class="helper-item__header">
+                <span class="helper-item__header-icon"></span>
+                <div class="helper-item__header-title">[SPF] Ваш сервер 209.85.215.182 имеет право использовать okeymaxim@gmail.com</div>
+                <span class="helper-item__header-status">
+                  <span class="icon-checked helper-item__header-status-checked helper-item__header-status-checked--green"></span>
+                </span>
+              </div>
+              <div class="helper-item__dropdown">
+                <div class="helper-item__content">
+                  <p>Политика DMARC позволяет отправителю указать, что их электронные письма защищены SPF и / или DKIM, и дать инструкции, если ни один из этих методов проверки подлинности проходит. Пожалуйста, убедитесь, что у вас есть набор DKIM и SPF перед использованием DMARC.</p>
+                  <hr>
+                  <p>Ваша запись DMARC установлен правильно, и ваше сообщение прошло испытание DMARC<br>Запись DMARC DNS найдено для домена _dmarc.gmail.com:</p>
+                  <p>"v=DMARC1; p=none; sp=quarantine; rua=mailto:mailauth-reports@google.com"</p>
+                </div>
+              </div>
+            </div>
+            <div class="helper-item">
+              <div class="helper-item__header">
+                <span class="helper-item__header-icon"></span>
+                <div class="helper-item__header-title">Ваша DKIM подпись действительна</div>
+                <span class="helper-item__header-status">
+                  <span class="icon-checked helper-item__header-status-checked helper-item__header-status-checked--green"></span>
+                </span>
+              </div>
+              <div class="helper-item__dropdown">
+                <div class="helper-item__content">Мы проверяем подлинность сервера, с которого отправлено письмо</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="helper-item">
+          <div class="helper-item__header">
+            <span class="helper-item__header-icon"></span>
+            <div class="helper-item__header-title">Кликните здесь для просмотра Вашего письма</div>
+            <span class="helper-item__header-status">
+              <span class="icon-checked helper-item__header-status-checked helper-item__header-status-checked--yellow"></span>
+            </span>
+          </div>
+          <div class="helper-item__dropdown">
+            <div class="helper-item__content">Мы проверяем подлинность сервера, с которого отправлено письмо</div>
+            <div class="helper-item">
+              <div class="helper-item__header">
+                <span class="helper-item__header-icon"></span>
+                <div class="helper-item__header-title">[SPF] Ваш сервер 209.85.215.182 имеет право использовать okeymaxim@gmail.com</div>
+                <span class="helper-item__header-status">
+                  <span class="icon-checked helper-item__header-status-checked helper-item__header-status-checked--green"></span>
+                </span>
+              </div>
+              <div class="helper-item__dropdown">
+                <div class="helper-item__content">
+                  <p>Политика DMARC позволяет отправителю указать, что их электронные письма защищены SPF и / или DKIM, и дать инструкции, если ни один из этих методов проверки подлинности проходит. Пожалуйста, убедитесь, что у вас есть набор DKIM и SPF перед использованием DMARC.</p>
+                  <hr>
+                  <p>Ваша запись DMARC установлен правильно, и ваше сообщение прошло испытание DMARC<br>Запись DMARC DNS найдено для домена _dmarc.gmail.com:</p>
+                  <p>"v=DMARC1; p=none; sp=quarantine; rua=mailto:mailauth-reports@google.com"</p>
+                </div>
+              </div>
+            </div>
+            <div class="helper-item">
+              <div class="helper-item__header">
+                <span class="helper-item__header-icon"></span>
+                <div class="helper-item__header-title">Ваша DKIM подпись действительна</div>
+                <span class="helper-item__header-status">
+                  <span class="icon-checked helper-item__header-status-checked helper-item__header-status-checked--green"></span>
+                </span>
+              </div>
+              <div class="helper-item__dropdown">
+                <div class="helper-item__content">Мы проверяем подлинность сервера, с которого отправлено письмо</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="helper-item">
+          <div class="helper-item__header">
+            <span class="helper-item__header-icon"></span>
+            <div class="helper-item__header-title">Кликните здесь для просмотра Вашего письма</div>
+            <span class="helper-item__header-status">
+              <span class="icon-checked helper-item__header-status-checked helper-item__header-status-checked--red"></span>
+            </span>
+          </div>
+          <div class="helper-item__dropdown">
+            <div class="helper-item__content">Мы проверяем подлинность сервера, с которого отправлено письмо</div>
+            <div class="helper-item">
+              <div class="helper-item__header">
+                <span class="helper-item__header-icon"></span>
+                <div class="helper-item__header-title">[SPF] Ваш сервер 209.85.215.182 имеет право использовать okeymaxim@gmail.com</div>
+                <span class="helper-item__header-status">
+                  <span class="icon-checked helper-item__header-status-checked helper-item__header-status-checked--green"></span>
+                </span>
+              </div>
+              <div class="helper-item__dropdown">
+                <div class="helper-item__content">
+                  <p>Политика DMARC позволяет отправителю указать, что их электронные письма защищены SPF и / или DKIM, и дать инструкции, если ни один из этих методов проверки подлинности проходит. Пожалуйста, убедитесь, что у вас есть набор DKIM и SPF перед использованием DMARC.</p>
+                  <hr>
+                  <p>Ваша запись DMARC установлен правильно, и ваше сообщение прошло испытание DMARC<br>Запись DMARC DNS найдено для домена _dmarc.gmail.com:</p>
+                  <p>"v=DMARC1; p=none; sp=quarantine; rua=mailto:mailauth-reports@google.com"</p>
+                </div>
+              </div>
+            </div>
+            <div class="helper-item">
+              <div class="helper-item__header">
+                <span class="helper-item__header-icon"></span>
+                <div class="helper-item__header-title">Ваша DKIM подпись действительна</div>
+                <span class="helper-item__header-status">
+                  <span class="icon-checked helper-item__header-status-checked helper-item__header-status-checked--green"></span>
+                </span>
+              </div>
+              <div class="helper-item__dropdown">
+                <div class="helper-item__content">Мы проверяем подлинность сервера, с которого отправлено письмо</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="helper-item">
+          <div class="helper-item__header">
+            <span class="helper-item__header-icon"></span>
+            <div class="helper-item__header-title">Кликните здесь для просмотра Вашего письма</div>
+            <span class="helper-item__header-status">
+              <span class="icon-checked helper-item__header-status-checked helper-item__header-status-checked--green"></span>
+            </span>
+          </div>
+          <div class="helper-item__dropdown">
+            <div class="helper-item__content">Мы проверяем подлинность сервера, с которого отправлено письмо</div>
+            <div class="helper-item">
+              <div class="helper-item__header">
+                <span class="helper-item__header-icon"></span>
+                <div class="helper-item__header-title">[SPF] Ваш сервер 209.85.215.182 имеет право использовать okeymaxim@gmail.com</div>
+                <span class="helper-item__header-status">
+                  <span class="icon-checked helper-item__header-status-checked helper-item__header-status-checked--green"></span>
+                </span>
+              </div>
+              <div class="helper-item__dropdown">
+                <div class="helper-item__content">
+                  <p>Политика DMARC позволяет отправителю указать, что их электронные письма защищены SPF и / или DKIM, и дать инструкции, если ни один из этих методов проверки подлинности проходит. Пожалуйста, убедитесь, что у вас есть набор DKIM и SPF перед использованием DMARC.</p>
+                  <hr>
+                  <p>Ваша запись DMARC установлен правильно, и ваше сообщение прошло испытание DMARC<br>Запись DMARC DNS найдено для домена _dmarc.gmail.com:</p>
+                  <p>"v=DMARC1; p=none; sp=quarantine; rua=mailto:mailauth-reports@google.com"</p>
+                </div>
+              </div>
+            </div>
+            <div class="helper-item">
+              <div class="helper-item__header">
+                <span class="helper-item__header-icon"></span>
+                <div class="helper-item__header-title">Ваша DKIM подпись действительна</div>
+                <span class="helper-item__header-status">
+                  <span class="icon-checked helper-item__header-status-checked helper-item__header-status-checked--green"></span>
+                </span>
+              </div>
+              <div class="helper-item__dropdown">
+                <div class="helper-item__content">Мы проверяем подлинность сервера, с которого отправлено письмо</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="helper-item">
+          <div class="helper-item__header">
+            <span class="helper-item__header-icon"></span>
+            <div class="helper-item__header-title">Кликните здесь для просмотра Вашего письма</div>
+            <span class="helper-item__header-status">
+              <span class="icon-checked helper-item__header-status-checked helper-item__header-status-checked--green"></span>
+            </span>
+          </div>
+          <div class="helper-item__dropdown">
+            <div class="helper-item__content">Мы проверяем подлинность сервера, с которого отправлено письмо</div>
+            <div class="helper-item">
+              <div class="helper-item__header">
+                <span class="helper-item__header-icon"></span>
+                <div class="helper-item__header-title">[SPF] Ваш сервер 209.85.215.182 имеет право использовать okeymaxim@gmail.com</div>
+                <span class="helper-item__header-status">
+                  <span class="icon-checked helper-item__header-status-checked helper-item__header-status-checked--green"></span>
+                </span>
+              </div>
+              <div class="helper-item__dropdown">
+                <div class="helper-item__content">
+                  <p>Политика DMARC позволяет отправителю указать, что их электронные письма защищены SPF и / или DKIM, и дать инструкции, если ни один из этих методов проверки подлинности проходит. Пожалуйста, убедитесь, что у вас есть набор DKIM и SPF перед использованием DMARC.</p>
+                  <hr>
+                  <p>Ваша запись DMARC установлен правильно, и ваше сообщение прошло испытание DMARC<br>Запись DMARC DNS найдено для домена _dmarc.gmail.com:</p>
+                  <p>"v=DMARC1; p=none; sp=quarantine; rua=mailto:mailauth-reports@google.com"</p>
+                </div>
+              </div>
+            </div>
+            <div class="helper-item">
+              <div class="helper-item__header">
+                <span class="helper-item__header-icon"></span>
+                <div class="helper-item__header-title">Ваша DKIM подпись действительна</div>
+                <span class="helper-item__header-status">
+                  <span class="icon-checked helper-item__header-status-checked helper-item__header-status-checked--green"></span>
+                </span>
+              </div>
+              <div class="helper-item__dropdown">
+                <div class="helper-item__content">Мы проверяем подлинность сервера, с которого отправлено письмо</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="helper-item">
+          <div class="helper-item__header">
+            <span class="helper-item__header-icon"></span>
+            <div class="helper-item__header-title">Кликните здесь для просмотра Вашего письма</div>
+            <span class="helper-item__header-status">
+              <span class="icon-checked helper-item__header-status-checked helper-item__header-status-checked--green"></span>
+            </span>
+          </div>
+          <div class="helper-item__dropdown">
+            <div class="helper-item__content">Мы проверяем подлинность сервера, с которого отправлено письмо</div>
+            <div class="helper-item">
+              <div class="helper-item__header">
+                <span class="helper-item__header-icon"></span>
+                <div class="helper-item__header-title">[SPF] Ваш сервер 209.85.215.182 имеет право использовать okeymaxim@gmail.com</div>
+                <span class="helper-item__header-status">
+                  <span class="icon-checked helper-item__header-status-checked helper-item__header-status-checked--green"></span>
+                </span>
+              </div>
+              <div class="helper-item__dropdown">
+                <div class="helper-item__content">
+                  <p>Политика DMARC позволяет отправителю указать, что их электронные письма защищены SPF и / или DKIM, и дать инструкции, если ни один из этих методов проверки подлинности проходит. Пожалуйста, убедитесь, что у вас есть набор DKIM и SPF перед использованием DMARC.</p>
+                  <hr>
+                  <p>Ваша запись DMARC установлен правильно, и ваше сообщение прошло испытание DMARC<br>Запись DMARC DNS найдено для домена _dmarc.gmail.com:</p>
+                  <p>"v=DMARC1; p=none; sp=quarantine; rua=mailto:mailauth-reports@google.com"</p>
+                </div>
+              </div>
+            </div>
+            <div class="helper-item">
+              <div class="helper-item__header">
+                <span class="helper-item__header-icon"></span>
+                <div class="helper-item__header-title">Ваша DKIM подпись действительна</div>
+                <span class="helper-item__header-status">
+                  <span class="icon-checked helper-item__header-status-checked helper-item__header-status-checked--green"></span>
+                </span>
+              </div>
+              <div class="helper-item__dropdown">
+                <div class="helper-item__content">Мы проверяем подлинность сервера, с которого отправлено письмо</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer BEGIN -->
+    <footer class="footer">
+      <div class="services-list footer__services">
+        <div class="services-list__col">
+          <div class="services services--current">
+            <div class="services__picture">
+              <img src="images/airmailer-logo--gradient-white.svg" alt="airmailer" class="services__logo">
+            </div>
+            <div class="services__desc">Политика DMARC позволяет отправителю указать, что их электронные письма защищены SPF и / или DKIM, и дать инструкции, если ни один из этих методов проверки подлинности проходит. Пожалуйста, убедитесь, что у вас есть набор DKIM и SPF перед использованием DMARC.</div>
+          </div>
+        </div>
+        <div class="services-list__col">
+          <div class="services">
+            <div class="services__picture">
+              <img src="images/checkermailer-logo--gradient-white.svg" alt="checkermailer" class="services__logo">
+            </div>
+            <div class="services__desc">Политика DMARC позволяет отправителю указать, что их электронные письма защищены SPF и / или DKIM, и дать инструкции, если ни один из этих методов п</div>
+          </div>
+        </div>
+        <div class="services-list__col">
+          <div class="services">
+            <div class="services__picture">
+              <img src="images/testermailer-logo--gradient-white.svg" alt="testermailer" class="services__logo">
+            </div>
+            <div class="services__desc"> письма защищены SPF и / или DKIM, и дать инструкции, если ни один из этих методов проверки подлинности проходит. Пожалуйста, убедитесь, что у вас есть набор DKIM и SPF перед использованием DMARC.</div>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="telegram footer__telegram">
+        <span class="icon-telegram telegram__icon"></span> Все новости в Телеграме
+      </a>
+    </footer>
+    <!-- footer END -->
+  </div>
+</div>
+<!-- site END -->
+
+<!-- main ↓ -->
+<script src="js/main.js?v=204"></script>
+
+</body>
+</html>
