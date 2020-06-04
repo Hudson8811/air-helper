@@ -668,7 +668,7 @@ button {
     -moz-background-size: 300% 100%;
     -o-background-size: 300% 100%;
     background-size: 300% 100%;
-    max-width: 450px;
+    width: 450px;
     padding: 20px 63px 20px 24px;
     display: -webkit-inline-box;
     display: -webkit-inline-flex;
