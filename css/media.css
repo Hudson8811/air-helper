@@ -17,7 +17,7 @@
         padding-left: 20px;
     }
     .appeal-link{
-        max-width: 100%;
+        width: 100%;
         padding: 20px;
         display: -webkit-box;
         display: -webkit-flex;
