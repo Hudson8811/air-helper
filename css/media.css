@@ -326,6 +326,9 @@
             -ms-flex-preferred-size: 100%;
                 flex-basis: 100%;
     }
+    .sender__checks{
+        justify-content: flex-start;
+    }
 }
 @media (max-width: 470px){
 .appeal-link {

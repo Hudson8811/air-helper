@@ -1901,7 +1901,7 @@ button {
 .sender {}
 
 .sender__header {
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 }
 
 .sender__row {
@@ -1944,6 +1944,86 @@ button {
     font-weight: 500;
     text-transform: uppercase;
 }
+
+.sender__checks{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.sender__checks .sender__checkbox{
+    margin-right: 40px;
+}
+.sender__checks .sender__checkbox:last-child{
+    margin-right: 0;
+}
+
+.sender__checkbox {
+    display: block;
+    position: relative;
+    padding-left: 28px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 20px;
+    line-height: 20px;
+}
+
+.sender__checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.sender__checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border: 1px solid #727885;
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+
+.sender__checkbox input:checked ~ .sender__checkmark {
+    background: linear-gradient(255.1deg, #D045AE 0%, #473CC2 98.79%);
+    border-width: 0;
+}
+
+.sender__checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.sender__checkbox input:checked ~ .sender__checkmark:after {
+    display: block;
+}
+
+.sender__checkbox .sender__checkmark:after {
+    left: 8px;
+    top: 2px;
+    width: 6px;
+    height: 11px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+
 
 .sender__range-slider {}
 
