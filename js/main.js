@@ -17,6 +17,14 @@ $(document).ready(function(){
     });
 
 
+    $('body').on('click', '.js-delete-upload',function () {
+        $(this).siblings('.upload-file__title').text('');
+        $(this).closest('.upload-file__result').removeClass('is-show').siblings('.upload-file__label').removeClass('is-hide').siblings('input[type="file"]').val('');
+        $(this).remove();
+    });
+
+
+
     // range slider
     if($('.js-range-slider').length>0){
         $('.js-range-slider').ionRangeSlider();
