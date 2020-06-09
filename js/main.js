@@ -48,6 +48,9 @@ $(document).ready(function(){
     $('.sender__date-toggle').click(function(){
         $(this).toggleClass('is-active');
         $('.sender__date-title, .sender__date-action').toggleClass('is-show');
+        var hiddenField = $('#kzp_field'),
+            val = hiddenField.val();
+        hiddenField.val(val === "0" ? "1" : "0");
     });
 
 
