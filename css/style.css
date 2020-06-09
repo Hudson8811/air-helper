@@ -1476,6 +1476,10 @@ button {
     position: relative;
 }
 
+.site.no_logo{
+    padding-bottom: 100px;
+}
+
 .header {
     padding: 91px 0 65px;
     display: -webkit-box;
