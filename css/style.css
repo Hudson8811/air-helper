@@ -1491,6 +1491,10 @@ button {
     text-align: center;
 }
 
+.header.no_logo{
+    justify-content: center;
+}
+
 .header__left {
     max-width: 20%;
     display: -webkit-box;

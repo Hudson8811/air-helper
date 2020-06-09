@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, user-scalable=0">
+<title>step 3</title>
+<link href="css/style.css?v=204" type="text/css" rel="stylesheet">
+<link href="css/media.css?v=204" type="text/css" rel="stylesheet">
+<script src="js/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+
+<!-- site BEGIN -->
+<div id="site">
+  <canvas id="bg-animated"></canvas>
+  <div class="site">
+    <!-- header BEGIN -->
+    <header class="header no_logo">
+      <div class="header__content">
+        <h1 class="title title--size_1 header__title">Mailgun $ender</h1>
+      </div>
+    </header>
+    <!-- header END -->
+    <!-- sender BEGIN -->
+    <form action="#" class="sender">
+      <div class="sender__header">
+        <div class="sender__row">
+          <div class="sender__col sender__col--1">
+            <div class="sender__subtitle">Кол-во отправок в минуту:</div>
+            <input type="text" name="count_send" class="js-range-slider range-slider sender__range-slider"
+              data-min="0"
+              data-max="2000"
+              data-from="1">
+          </div>
+          <div class="sender__col sender__col--2">
+            <div class="sender__subtitle">Email получителей (.txt)</div>
+            <div class="upload-file sender__upload-file">
+              <input type="file" name="upload_email" id="upload_1" class="js-upload-input upload-file__input" value="">
+              <label for="upload_1" class="upload-file__label">
+                <span class="icon-download upload-file__icon"></span> Загрузить
+              </label>
+              <div class="upload-file__result">
+                <div class="upload-file__title"></div>
+              </div>
+            </div>
+          </div>
+          <div class="sender__col sender__col--2">
+            <div class="sender__subtitle">es/eu:domain: proxy (.txt)</div>
+            <div class="upload-file sender__upload-file">
+              <input type="file" name="upload_email" id="upload_2" class="js-upload-input upload-file__input" value="">
+              <label for="upload_2" class="upload-file__label">
+                <span class="icon-download upload-file__icon"></span> Загрузить
+              </label>
+              <div class="upload-file__result">
+                <div class="upload-file__title"></div>
+              </div>
+            </div>
+          </div>
+          <div class="sender__col sender__col--2">
+            <div class="sender__subtitle">Заголовок</div>
+            <div class="upload-file sender__upload-file">
+              <input type="file" name="upload_email" id="upload_3" class="js-upload-input upload-file__input" value="">
+              <label for="upload_3" class="upload-file__label">
+                <span class="icon-download upload-file__icon"></span> Загрузить
+              </label>
+              <div class="upload-file__result">
+                <div class="upload-file__title"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sender__checks">
+        <label class="sender__checkbox">
+          Color
+          <input type="checkbox" checked="checked" name="color">
+          <span class="sender__checkmark"></span>
+        </label>
+        <label class="sender__checkbox">
+          Font
+          <input type="checkbox" checked="checked" name="font">
+          <span class="sender__checkmark"></span>
+        </label>
+        <label class="sender__checkbox">
+          Tags
+          <input type="checkbox" checked="checked" name="tags">
+          <span class="sender__checkmark"></span>
+        </label>
+        <label class="sender__checkbox">
+          Size
+          <input type="checkbox" checked="checked" name="size">
+          <span class="sender__checkmark"></span>
+        </label>
+      </div>
+      <div class="editor sender__body">
+        <input type="text" name="subject" class="editor__subject" value="" placeholder="Тема письма..">
+        <div class="editor__body">
+          <div class="editor__body-action">
+            <div class="editor__body-btn"></div>
+            <div class="editor__body-btn"></div>
+            <div class="editor__body-btn"></div>
+            <div class="editor__body-btn"></div>
+            <div class="editor__body-btn"></div>
+            <div class="editor__body-btn"></div>
+            <div class="editor__body-btn"></div>
+          </div>
+          <textarea name="message" class="editor__body-textarea" cols="" rows="" placeholder="Тело письма.."></textarea>
+        </div>
+      </div>
+      <div class="sender__footer">
+        <a href="#" class="sender__all-btn">Все мои рассылки</a>
+        <div class="sender__footer-right">
+          <div class="sender__date">
+            <div class="sender__date-title sender__date-title--hide is-show">Отложенный запуск</div>
+            <div class="sender__date-title sender__date-title--show">Отложенный запуск (GTM +3)</div>
+            <div class="sender__date-inner">
+              <input type="hidden" name="kzp" value="0" id="kzp_field">
+              <a class="sender__date-toggle"></a>
+              <input type="text" name="date" class="js-picker sender__date-action" autocomplete="off" value="" placeholder="Дата и время">
+            </div>
+          </div>
+          <button class="btn sender__btn" disabled>
+            <span class="icon-refresh sender__btn-icon"></span> Запустить рассылку
+          </button>
+        </div>
+      </div>
+    </form>
+    <!-- sender END -->
+  </div>
+</div>
+<!-- site END -->
+
+<!-- range slider ↓ -->
+<script src="js/ion.rangeSlider.min.js?v=204"></script>
+<!-- date & time picker slider ↓ -->
+<script src="js/jquery.datetimepicker.full.min.js?v=204"></script>
+<!-- main ↓ -->
+<script src="js/main.js?v=204"></script>
+
+</body>
+</html>
