@@ -112,11 +112,9 @@
         -webkit-flex-wrap: wrap;
             -ms-flex-wrap: wrap;
                 flex-wrap: wrap;
-        border: 1px solid rgba(114,120,133,.2);
     }
     .sender__col{
         padding: 20px;
-        border: 1px solid rgba(114,120,133,.2);
     }
     .sender__col--1{
         max-width: 100%;
