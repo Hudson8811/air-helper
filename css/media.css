@@ -118,7 +118,12 @@
         padding: 20px;
         border: 1px solid rgba(114,120,133,.2);
     }
-    .sender__col--1,
+    .sender__col--1{
+        max-width: 100%;
+        -webkit-flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    }
     .sender__col--2{
         max-width: 50%;
         -webkit-flex-basis: 50%;
