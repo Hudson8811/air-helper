@@ -46,6 +46,35 @@
     }
 }
 
+@media (max-width: 1300px) {
+    .sidebar {
+        width: 100%;
+        max-width: 100%;
+        position: relative;
+        bottom: 0;
+        transform: none;
+        right: 0;
+        left: 0;
+        border-radius: 8px 8px 0 0;
+        margin-top: 30px;
+    }
+
+    .sidebar__features {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0 -4px;
+    }
+
+    .sidebar__features-item {
+        width: 122px;
+    }
+
+    .sidebar__title {
+        text-align: center;
+    }
+}
+
 @media (max-width: 1199px){
     .header{
         padding-top: 5px;
