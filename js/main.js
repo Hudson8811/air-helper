@@ -100,6 +100,7 @@ $(document).mouseup(function(e) {
 });
 
 // background animated
+/*
 var c = document.getElementById("bg-animated");
 if (typeof c !== 'undefined') {
     var ctx = c.getContext("2d");
@@ -271,4 +272,4 @@ if (typeof c !== 'undefined') {
             }
         }
     }
-}
+}*/
