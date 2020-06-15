@@ -1552,7 +1552,6 @@ button {
     min-height: 100vh;
     margin: 0 auto;
     padding: 0 40px;
-    position: relative;
 }
 
 .site.no_logo{
