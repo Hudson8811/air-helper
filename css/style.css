@@ -790,8 +790,16 @@ button {
     position: relative;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     margin: 0 4px 8px;
+    cursor: auto;
+    transition: transform 0.3s ease;
+}
+
+.sidebar__features-item:hover {
+    text-decoration: none;
+    transform: scale(1.1);
 }
 
 .sidebar__features-item::after {
@@ -1609,6 +1617,10 @@ button {
     font-size: 18px;
     line-height: 1.3;
     color: #727885;
+}
+
+.header__description--top {
+    margin: 0 auto 15px;
 }
 
 .header__logo {

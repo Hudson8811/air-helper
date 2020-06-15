@@ -201,6 +201,9 @@
     .header__description{
         margin-bottom: 30px;
     }
+    .header__description--top {
+        margin-bottom: 0;
+    }
     .sender__footer{
         display: block;
         text-align: center;
@@ -213,6 +216,10 @@
     .sender__date{
         margin: 0 auto 20px;
         text-align: left;
+    }
+
+    .sidebar__features-item:hover {
+        transform: none;
     }
 }
 

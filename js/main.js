@@ -74,6 +74,15 @@ $(document).ready(function(){
         $(activeTab).addClass('is-show');
         event.preventDefault();
     });
+
+    // copy mail
+    $('.form__header-action-btn-copy').click(function () {
+        let buffer = $('<input>');
+        $('body').append(buffer);
+        buffer.val($('.form__header-action-input').val()).select();
+        document.execCommand("copy");
+        buffer.remove();
+    });
 });
 
 $(document).mouseup(function(e) {
