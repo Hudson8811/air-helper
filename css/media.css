@@ -15,7 +15,6 @@
     .site{
         padding-right: 20px;
         padding-left: 20px;
-        margin-top: 80px;
     }
     .appeal-link{
         width: 100%;
@@ -31,6 +30,9 @@
         position: fixed;
         top: 0;
         left: 0;
+    }
+    .appeal-link--hidden {
+        display: none;
     }
     .appeal-link__arrow{
         margin-left: auto;
