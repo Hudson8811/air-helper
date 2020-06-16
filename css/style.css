@@ -1103,7 +1103,10 @@ button {
 
 .popup-start__input {
     padding: 14px 0;
-    color: #727885;
+    font-size: 18px;
+    line-height: 23px;
+    color: #1B1F26;
+    font-weight: 500;
     border-color: #e5e8ed;
 }
 
