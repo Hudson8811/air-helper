@@ -83,6 +83,21 @@ $(document).ready(function(){
         document.execCommand("copy");
         buffer.remove();
     });
+
+    $('.form__btn--start').fancybox({
+        touch: false,
+        scrolling: 'no',
+        autoFocus: false,
+        beforeShow: function(){
+          $("body").css({'overflow-y':'hidden'});
+        },
+        afterClose: function(){
+          $("body").css({'overflow-y':'visible'});
+        },
+        btnTpl : {
+          smallBtn : '<div data-fancybox-close class="popup-comment__close"><img src="images/close-popup.svg" class="close-popup-icon"></div>'
+        }
+    });
 });
 
 $(document).mouseup(function(e) {

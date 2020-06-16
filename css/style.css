@@ -1078,6 +1078,62 @@ button {
     text-transform: uppercase;
 }
 
+.popup-start {
+    max-width: 320px;
+    width: 100%;
+    padding: 32px;
+    border-radius: 8px;
+    position: relative;
+}
+
+.popup-start__title {
+    font-size: 24px;
+    line-height: 31px;
+    font-weight: bold;
+    color: #1B1F26;
+    margin-bottom: 20px;
+}
+
+.popup-start__desc {
+    font-size: 16px;
+    line-height: 21px;
+    color: #727885;
+    margin-bottom: 33px;
+}
+
+.popup-start__input {
+    padding: 14px 0;
+    color: #727885;
+    border-color: #e5e8ed;
+}
+
+.popup-start__input::placeholder {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 500;
+    color: #727885;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.popup-start__input:focus::placeholder {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.popup-start__submit {
+    width: 100%;
+    padding: 21px 50px;
+    margin-top: 32px;
+}
+
+.popup-comment__close {
+    position: absolute;
+    top: 32px;
+    right: 32px;
+    cursor: pointer;
+}
+
 .dot {
     width: 8px;
     height: 8px;

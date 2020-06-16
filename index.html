@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, user-scalable=0">
 <title>Главная</title>
+<link href="css/jquery.fancybox.min.css?v=204" type="text/css" rel="stylesheet">
 <link href="css/style.css?v=204" type="text/css" rel="stylesheet">
 <link href="css/media.css?v=204" type="text/css" rel="stylesheet">
 <script src="js/jquery-3.2.1.min.js"></script>
@@ -59,9 +60,9 @@
           </div>
         </div>
       </div>
-      <button type="submit" class="btn form__btn">
+      <div type="submit" class="btn form__btn form__btn--start" data-src="#start">
         <span class="btn__text">2. После отправки письма нажмите сюда</span>
-      </button>
+      </div>
     </form>
     <div class="sidebar">
       <div class="sidebar__title">Точнее чем Mail-tester, дешевле чем Glockapps.com</div>
@@ -103,7 +104,19 @@
   </div>
 </div>
 <!-- site END -->
+<div class="popup-start" id="start" style="display: none;">
+  <div class="popup-start__title">Начало работы</div>
+  <div class="popup-start__desc">Укажите адрес эл. почты на который будет выслан код подтверждения</div>
+  <form action="#" method="POST" class="popup-start__form">
+    <input type="text" name="code" class="input popup-start__input" placeholder="Введите код">
+    <button type="submit" class="btn popup-start__submit">
+      <span class="btn__text">Выслать код</span>
+    </button>
+  </form>
+</div>
 
+<!-- popup fancybox ↓ -->
+<script src="js/jquery.fancybox.min.js?v=204"></script>
 <!-- main ↓ -->
 <script src="js/main.js?v=204"></script>
 
