@@ -303,6 +303,7 @@
         text-align: center;
     }
     .helper__banner img{
+        display: none;
         margin-bottom: 21px;
         margin-right: 0;
     }
