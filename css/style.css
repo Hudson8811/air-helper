@@ -1548,6 +1548,63 @@ button {
     transform: rotate(180deg);
 }
 
+.helper__banner{
+    font-size: 16px;
+    line-height: 21px;
+    margin-top: 69px;
+    background: -moz-linear-gradient(left, rgba(71,60,194,0.3) 0%, rgba(208,69,174,0.3) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(71,60,194,0.3) 0%,rgba(208,69,174,0.3) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(71,60,194,0.3) 0%,rgba(208,69,174,0.3) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4d473cc2', endColorstr='#4dd045ae',GradientType=1 );
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-left: 38px;
+    padding-right: 33px;
+}
+
+.helper__banner a{
+    display: block;
+    background: rgb(71,60,194); /* Old browsers */
+    background: -moz-linear-gradient(left, rgba(71,60,194,1) 0%, rgba(208,69,174,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(71,60,194,1) 0%,rgba(208,69,174,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(71,60,194,1) 0%,rgba(208,69,174,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#473cc2', endColorstr='#d045ae',GradientType=1 );
+    width: 182px;
+    height: 40px;
+    border-radius: 4px;
+    line-height: 40px;
+    text-decoration: none !important;
+    text-align: center;
+    margin-left: auto !important;
+    font-size: 14px;
+    flex-shrink: 0;
+}
+
+.helper__banner img{
+    margin-top: -11px;
+    margin-bottom: -6px;
+    margin-right: 40px;
+}
+
+.helper__banner-text{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    max-width: 820px;
+    margin-right: 30px;
+}
+
+.helper__banner-text .ah1{
+    font-size: 20px;
+    line-height: 23px;
+    font-weight: 700;
+    margin-bottom: 7px;
+}
+
 .process {
     height: 50px;
     color: #fff;

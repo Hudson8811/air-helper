@@ -295,6 +295,29 @@
         padding-right: 15px;
         padding-left: 15px;
     }
+    .helper__banner{
+        padding-bottom: 20px;
+        padding-left: 30px;
+        padding-right: 30px;
+        display: block;
+        text-align: center;
+    }
+    .helper__banner img{
+        margin-bottom: 21px;
+        margin-right: 0;
+    }
+    .helper__banner-text{
+        margin-right: 0;
+        margin-left: 0;
+        padding-bottom: 36px;
+    }
+    .helper__banner-text .ah1{
+        line-height: 26px;
+    }
+    .helper__banner a{
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 @media (max-width: 575px){
