@@ -1,140 +1,214 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, user-scalable=0">
-<title>step 4</title>
-<link href="css/style.css?v=204" type="text/css" rel="stylesheet">
-<link href="css/media.css?v=204" type="text/css" rel="stylesheet">
-<script src="js/jquery-3.2.1.min.js"></script>
-</head>
-<body>
-
-<!-- site BEGIN -->
-<div id="site">
-  <canvas id="bg-animated">
-    <!--<img src="images/bg.jpg"  class="site-bg">-->
-  </ca>
-  <div class="site no_logo">
-    <!-- header BEGIN -->
-    <header class="header no_logo">
-      <div class="header__content">
-        <h1 class="title title--size_1 header__title">Mailgun $ender</h1>
-      </div>
-    </header>
-    <!-- header END -->
-    <!-- mailing BEGIN -->
-    <div class="mailing">
-      <div class="mailing__nav-ob">
-        <div class="mailing__nav-wrap js-mailing__nav-wrap">
-
-        <div class="mailing__nav">
-
-          <a href="#" class="mailing__nav-btn">Создать новую рассылку</a>
-          <a href="#mailing-1" class="mailing__nav-link is-active">Процесс рассылки №3</a>
-          <a href="#mailing-2" class="mailing__nav-link">Процесс рассылки №2</a>
-          <a href="#mailing-3" class="mailing__nav-link">Процесс рассылки №1</a>
-          <a href="#mailing-4" class="mailing__nav-link">Процесс рассылки №1</a>
-          <a href="#mailing-5" class="mailing__nav-link">Процесс рассылки №1</a>
-        </div>
-      </div>
-      </div>
-      <div class="mailing__block">
-        <a href="#mailing-1" class="mailing__nav-link--mobile mailing__nav-link is-active">Процесс рассылки №3</a>
-        <div id="mailing-1" class="mailing__item is-show">
-          <div class="mailing__item-title">Процесс рассылки №3</div>
-          <div class="process mailing__item-process">
-            <div class="process__current" style="width: 60%;">
-              <span class="icon-send process__current-icon"></span>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, user-scalable=0"
+    />
+    <title>step 4</title>
+    <link href="css/style.css?v=204" type="text/css" rel="stylesheet" />
+    <link href="css/media.css?v=204" type="text/css" rel="stylesheet" />
+    <script src="js/jquery-3.2.1.min.js"></script>
+  </head>
+  <body>
+    <!-- site BEGIN -->
+    <div id="site">
+      <canvas id="bg-animated">
+        <!--<img src="images/bg.jpg"  class="site-bg">-->
+      </canvas>
+      <div class="site no_logo">
+        <!-- header BEGIN -->
+        <header class="header no_logo">
+          <div class="header__content">
+            <h1 class="title title--size_1 header__title">Mailgun $ender</h1>
+          </div>
+        </header>
+        <!-- header END -->
+        <!-- mailing BEGIN -->
+        <div class="mailing">
+          <div class="mailing__nav-ob">
+            <div class="mailing__nav-wrap js-mailing__nav-wrap">
+              <div class="mailing__nav">
+                <a href="#" class="mailing__nav-btn">Создать новую рассылку</a>
+                <a href="#mailing-1" class="mailing__nav-link is-active"
+                  >Процесс рассылки №3</a
+                >
+                <a href="#mailing-2" class="mailing__nav-link"
+                  >Процесс рассылки №2</a
+                >
+                <a href="#mailing-3" class="mailing__nav-link"
+                  >Процесс рассылки №1</a
+                >
+                <a href="#mailing-4" class="mailing__nav-link"
+                  >Процесс рассылки №1</a
+                >
+                <a href="#mailing-5" class="mailing__nav-link"
+                  >Процесс рассылки №1</a
+                >
+              </div>
             </div>
           </div>
-          <div class="mailing__item-description">
-            <div class="mailing__item-line">Отправлено на: <span class="color--white">3</span></div>
-            <div class="mailing__item-line">Статус: <span class="color--yellow">В процессе</span> <span class="color--white">(69%)</span></div>
-            <div class="mailing__item-line">Загружено email: <span class="color--white">53</span></div>
-            <div class="mailing__item-line">Загружено доменов: <span class="color--white">3</span></div>
-          </div>
-          <a class="mailing__item-stop">Остановить рассылку</a>
-        </div>
-        <a href="#mailing-2" class="mailing__nav-link--mobile mailing__nav-link">Процесс рассылки №2</a>
-        <div id="mailing-2" class="mailing__item">
-          <div class="mailing__item-title">Процесс рассылки №2</div>
-          <div class="process mailing__item-process">
-            <div class="process__current" style="width: 40%;">
-              <span class="icon-send process__current-icon"></span>
+          <div class="mailing__block">
+            <a
+              href="#mailing-1"
+              class="mailing__nav-link--mobile mailing__nav-link is-active"
+              >Процесс рассылки №3</a
+            >
+            <div id="mailing-1" class="mailing__item is-show">
+              <div class="mailing__item-title">Процесс рассылки №3</div>
+              <div class="process mailing__item-process">
+                <div class="process__current" style="width: 60%;">
+                  <span class="icon-send process__current-icon"></span>
+                </div>
+              </div>
+              <div class="mailing__item-description">
+                <div class="mailing__item-line">
+                  Отправлено на: <span class="color--white">3</span>
+                </div>
+                <div class="mailing__item-line">
+                  Статус: <span class="color--yellow">В процессе</span>
+                  <span class="color--white">(69%)</span>
+                </div>
+                <div class="mailing__item-line">
+                  Загружено email: <span class="color--white">53</span>
+                </div>
+                <div class="mailing__item-line">
+                  Загружено доменов: <span class="color--white">3</span>
+                </div>
+              </div>
+              <a class="mailing__item-stop">Остановить рассылку</a>
+            </div>
+            <a
+              href="#mailing-2"
+              class="mailing__nav-link--mobile mailing__nav-link"
+              >Процесс рассылки №2</a
+            >
+            <div id="mailing-2" class="mailing__item">
+              <div class="mailing__item-title">Процесс рассылки №2</div>
+              <div class="process mailing__item-process">
+                <div class="process__current" style="width: 40%;">
+                  <span class="icon-send process__current-icon"></span>
+                </div>
+              </div>
+              <div class="mailing__item-description">
+                <div class="mailing__item-line">
+                  Отправлено на: <span class="color--white">1</span>
+                </div>
+                <div class="mailing__item-line">
+                  Статус: <span class="color--yellow">В процессе</span>
+                  <span class="color--white">(40%)</span>
+                </div>
+                <div class="mailing__item-line">
+                  Загружено email: <span class="color--white">40</span>
+                </div>
+                <div class="mailing__item-line">
+                  Загружено доменов: <span class="color--white">5</span>
+                </div>
+              </div>
+              <a class="mailing__item-stop">Остановить рассылку</a>
+            </div>
+            <a
+              href="#mailing-3"
+              class="mailing__nav-link--mobile mailing__nav-link"
+              >Процесс рассылки №1</a
+            >
+            <div id="mailing-3" class="mailing__item">
+              <div class="mailing__item-title">Процесс рассылки №1</div>
+              <div class="process mailing__item-process">
+                <div class="process__current" style="width: 30%;">
+                  <span class="icon-send process__current-icon"></span>
+                </div>
+              </div>
+              <div class="mailing__item-description">
+                <div class="mailing__item-line">
+                  Отправлено на: <span class="color--white">2</span>
+                </div>
+                <div class="mailing__item-line">
+                  Статус: <span class="color--yellow">В процессе</span>
+                  <span class="color--white">(60%)</span>
+                </div>
+                <div class="mailing__item-line">
+                  Загружено email: <span class="color--white">80</span>
+                </div>
+                <div class="mailing__item-line">
+                  Загружено доменов: <span class="color--white">4</span>
+                </div>
+              </div>
+              <a class="mailing__item-stop">Остановить рассылку</a>
+            </div>
+            <a
+              href="#mailing-4"
+              class="mailing__nav-link--mobile mailing__nav-link"
+              >Процесс рассылки №1</a
+            >
+            <div id="mailing-4" class="mailing__item">
+              <div class="mailing__item-title">Процесс рассылки №2</div>
+              <div class="process mailing__item-process">
+                <div class="process__current" style="width: 90%;">
+                  <span class="icon-send process__current-icon"></span>
+                </div>
+              </div>
+              <div class="mailing__item-description">
+                <div class="mailing__item-line">
+                  Отправлено на: <span class="color--white">1</span>
+                </div>
+                <div class="mailing__item-line">
+                  Статус: <span class="color--yellow">В процессе</span>
+                  <span class="color--white">(40%)</span>
+                </div>
+                <div class="mailing__item-line">
+                  Загружено email: <span class="color--white">40</span>
+                </div>
+                <div class="mailing__item-line">
+                  Загружено доменов: <span class="color--white">5</span>
+                </div>
+              </div>
+              <a class="mailing__item-stop">Остановить рассылку</a>
+            </div>
+            <a
+              href="#mailing-5"
+              class="mailing__nav-link--mobile mailing__nav-link"
+              >Процесс рассылки №1</a
+            >
+            <div id="mailing-5" class="mailing__item">
+              <div class="mailing__item-title">Процесс рассылки №1</div>
+              <div class="process mailing__item-process">
+                <div class="process__current" style="width: 55%;">
+                  <span class="icon-send process__current-icon"></span>
+                </div>
+              </div>
+              <div class="mailing__item-description">
+                <div class="mailing__item-line">
+                  Отправлено на: <span class="color--white">2</span>
+                </div>
+                <div class="mailing__item-line">
+                  Статус: <span class="color--yellow">В процессе</span>
+                  <span class="color--white">(60%)</span>
+                </div>
+                <div class="mailing__item-line">
+                  Загружено email: <span class="color--white">80</span>
+                </div>
+                <div class="mailing__item-line">
+                  Загружено доменов: <span class="color--white">4</span>
+                </div>
+              </div>
+              <a class="mailing__item-stop">Остановить рассылку</a>
             </div>
           </div>
-          <div class="mailing__item-description">
-            <div class="mailing__item-line">Отправлено на: <span class="color--white">1</span></div>
-            <div class="mailing__item-line">Статус: <span class="color--yellow">В процессе</span> <span class="color--white">(40%)</span></div>
-            <div class="mailing__item-line">Загружено email: <span class="color--white">40</span></div>
-            <div class="mailing__item-line">Загружено доменов: <span class="color--white">5</span></div>
-          </div>
-          <a class="mailing__item-stop">Остановить рассылку</a>
         </div>
-        <a href="#mailing-3" class="mailing__nav-link--mobile mailing__nav-link">Процесс рассылки №1</a>
-        <div id="mailing-3" class="mailing__item">
-          <div class="mailing__item-title">Процесс рассылки №1</div>
-          <div class="process mailing__item-process">
-            <div class="process__current" style="width: 30%;">
-              <span class="icon-send process__current-icon"></span>
-            </div>
-          </div>
-          <div class="mailing__item-description">
-            <div class="mailing__item-line">Отправлено на: <span class="color--white">2</span></div>
-            <div class="mailing__item-line">Статус: <span class="color--yellow">В процессе</span> <span class="color--white">(60%)</span></div>
-            <div class="mailing__item-line">Загружено email: <span class="color--white">80</span></div>
-            <div class="mailing__item-line">Загружено доменов: <span class="color--white">4</span></div>
-          </div>
-          <a class="mailing__item-stop">Остановить рассылку</a>
-        </div>
-        <a href="#mailing-4" class="mailing__nav-link--mobile mailing__nav-link">Процесс рассылки №1</a>
-        <div id="mailing-4" class="mailing__item">
-          <div class="mailing__item-title">Процесс рассылки №2</div>
-          <div class="process mailing__item-process">
-            <div class="process__current" style="width: 90%;">
-              <span class="icon-send process__current-icon"></span>
-            </div>
-          </div>
-          <div class="mailing__item-description">
-            <div class="mailing__item-line">Отправлено на: <span class="color--white">1</span></div>
-            <div class="mailing__item-line">Статус: <span class="color--yellow">В процессе</span> <span class="color--white">(40%)</span></div>
-            <div class="mailing__item-line">Загружено email: <span class="color--white">40</span></div>
-            <div class="mailing__item-line">Загружено доменов: <span class="color--white">5</span></div>
-          </div>
-          <a class="mailing__item-stop">Остановить рассылку</a>
-        </div>
-        <a href="#mailing-5" class="mailing__nav-link--mobile mailing__nav-link">Процесс рассылки №1</a>
-        <div id="mailing-5" class="mailing__item">
-          <div class="mailing__item-title">Процесс рассылки №1</div>
-          <div class="process mailing__item-process">
-            <div class="process__current" style="width: 55%;">
-              <span class="icon-send process__current-icon"></span>
-            </div>
-          </div>
-          <div class="mailing__item-description">
-            <div class="mailing__item-line">Отправлено на: <span class="color--white">2</span></div>
-            <div class="mailing__item-line">Статус: <span class="color--yellow">В процессе</span> <span class="color--white">(60%)</span></div>
-            <div class="mailing__item-line">Загружено email: <span class="color--white">80</span></div>
-            <div class="mailing__item-line">Загружено доменов: <span class="color--white">4</span></div>
-          </div>
-          <a class="mailing__item-stop">Остановить рассылку</a>
-        </div>
+        <!-- mailing END -->
       </div>
     </div>
-    <!-- mailing END -->
-  </div>
-</div>
-<!-- site END -->
+    <!-- site END -->
 
-<!-- range slider ↓ -->
-<script src="js/ion.rangeSlider.min.js?v=204"></script>
-<!-- date & time picker slider ↓ -->
-<script src="js/jquery.datetimepicker.full.min.js?v=204"></script>
+    <!-- range slider ↓ -->
+    <script src="js/ion.rangeSlider.min.js?v=204"></script>
+    <!-- date & time picker slider ↓ -->
+    <script src="js/jquery.datetimepicker.full.min.js?v=204"></script>
 
-<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-<!-- main ↓ -->
-<script src="js/main.js?v=204"></script>
-
-</body>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <!-- main ↓ -->
+    <script src="js/main.js?v=204"></script>
+  </body>
 </html>
