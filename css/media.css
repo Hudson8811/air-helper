@@ -1,4 +1,20 @@
 @media all and (min-width: 1200px) {
+  .post-blocks{
+    margin-bottom: 19px;
+    padding-bottom: 15px;
+  }
+  .post-blocks__pros{
+    font-size: 8px;
+  }
+  .post-blocks__item:first-child .post-blocks__pros{
+    font-size: 11px;
+  }
+  .post-blocks__img{
+    height: 26px;
+  }
+  .post-blocks__img img{
+    max-height: 26px;
+  }
   .new_desktop_size .sender__subtitle {
     font-size: 11px;
     margin-bottom: 13px;
@@ -145,7 +161,8 @@
   }
 
   .new_desktop_size .mailing__item {
-    max-width: 484px;
+    max-width: 387px;
+    padding: 19px;
   }
 
   .new_desktop_size .header {
@@ -156,11 +173,13 @@
     max-width: 1184px;
   }
   .new_desktop_size .mailing__block {
-    flex: 0 0 484px;
+    flex: 0 0 387px;
   }
 
   .new_desktop_size .mailing__item-description {
     padding: 19px;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 
   .new_desktop_size .mailing__item-line {

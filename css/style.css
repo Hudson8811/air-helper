@@ -3293,13 +3293,13 @@ button {
     display: flex;
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
+    margin-bottom: 24px;
+    padding-bottom: 20px;
+    border-bottom:1px solid #1B1F26;
 }
 .post-blocks__item{
     width: 100%;
     text-align: center;
-    padding-bottom: 20px;
-    border-bottom:1px solid #1B1F26;
-    margin-bottom: 24px;
 }
 .post-blocks__img{
     height: 32px;
