@@ -3306,6 +3306,9 @@ button {
     vertical-align: middle;
     margin-bottom: 10px;
 }
+.post-blocks__img svg{
+    max-width: 90%;
+}
 .post-blocks__pros{
     line-height: 18px;
     font-size: 10px;
