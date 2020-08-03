@@ -318,3 +318,16 @@ if (typeof c !== "undefined") {
     }
   }
 }
+
+if ($('.post-blocks__pros').length > 0){
+  $('.post-blocks__pros').each(function () {
+    var value = parseInt($(this).text());
+    if (value < 25) {
+      $(this).addClass('state-1');
+    } else if (value < 75) {
+      $(this).addClass('state-2');
+    } else {
+      $(this).addClass('state-3');
+    }
+  });
+}

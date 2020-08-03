@@ -3317,3 +3317,13 @@ button {
     font-size: 14px;
     color: #fff;
 }
+
+.post-blocks__item:not(:first-child) .post-blocks__pros.state-1{
+    color: #E72B2B;
+}
+.post-blocks__item:not(:first-child) .post-blocks__pros.state-2{
+    color: #E8B006;
+}
+.post-blocks__item:not(:first-child) .post-blocks__pros.state-3{
+    color: #02B03D;
+}
