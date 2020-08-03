@@ -3297,4 +3297,20 @@ button {
 .post-blocks__item{
     width: 100%;
     text-align: center;
+    padding-bottom: 20px;
+    border-bottom:1px solid #1B1F26;
+    margin-bottom: 24px;
+}
+.post-blocks__img{
+    height: 32px;
+    vertical-align: middle;
+    margin-bottom: 10px;
+}
+.post-blocks__pros{
+    line-height: 18px;
+    font-size: 10px;
+}
+.post-blocks__item:first-child .post-blocks__pros{
+    font-size: 14px;
+    color: #fff;
 }

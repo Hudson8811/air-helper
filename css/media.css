@@ -145,8 +145,7 @@
   }
 
   .new_desktop_size .mailing__item {
-    max-width: 387px;
-    padding: 26px;
+    max-width: 484px;
   }
 
   .new_desktop_size .header {
@@ -157,11 +156,10 @@
     max-width: 1184px;
   }
   .new_desktop_size .mailing__block {
-    flex: 0 0 387px;
+    flex: 0 0 484px;
   }
 
   .new_desktop_size .mailing__item-description {
-    margin: 19px;
     padding: 19px;
   }
 
