@@ -3286,3 +3286,15 @@ button {
     background: rgba(231, 43, 43, .4);
     text-decoration: none;
 }
+
+
+.post-blocks{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+}
+.post-blocks__item{
+    width: 100%;
+    text-align: center;
+}
