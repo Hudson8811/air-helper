@@ -128,7 +128,6 @@ $(document).mouseup(function (e) {
   }
 });
 
-// background animated
 
 if ($('.post-blocks__pros').length > 0){
   $('.post-blocks__pros').each(function () {
@@ -147,6 +146,7 @@ if ($('.post-blocks__pros').length > 0){
   });
 }
 
+// background animated
 var c = document.getElementById("bg-animated");
 if (typeof c !== "undefined") {
   var ctx = c.getContext("2d");
