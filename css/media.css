@@ -1,5 +1,5 @@
 @media all and (min-width: 1200px) {
-  .post-blocks{
+  .post-blocks__item{
     margin-bottom: 19px;
     padding-bottom: 15px;
   }
