@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, user-scalable=0"
+    />
+    <title>step 4</title>
+    <link href="css/style.css?v=204" type="text/css" rel="stylesheet" />
+    <link href="css/media.css?v=204" type="text/css" rel="stylesheet" />
+    <script src="js/jquery-3.2.1.min.js"></script>
+  </head>
+  <body>
+    <!-- site BEGIN -->
+    <div id="site">
+      <canvas id="bg-animated">
+        <!--<img src="images/bg.jpg"  class="site-bg">-->
+      </canvas>
+      <div class="site no_logo new_desktop_size">
+        <!-- header BEGIN -->
+        <header class="header">
+          <div class="header__flex">
+            <a href="" class="header__newlogo">
+              <img src="images/new/logo.svg" alt="logo">
+            </a>
+            <div class="header__log-menu">
+              <a href="" class="active">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M10 5H8V7H10V5ZM24 5H12V7H24V5ZM8 10H10V12H8V10ZM24 10H12V12H24V10ZM8 15H10V17H8V15ZM24 15H12V17H24V15ZM8 20H10V22H8V20ZM24 20H12V22H24V20ZM8 25H10V27H8V25ZM24 25H12V27H24V25Z" fill="white"/>
+                </svg>
+                <span>Мои рассылки</span>
+              </a>
+              <a href="">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M26.0408 27.9999H9.61221C9.36062 27.9999 9.11934 27.9056 8.94144 27.7378C8.76354 27.57 8.66359 27.3423 8.66359 27.1049V23.45C8.66359 23.3324 8.68813 23.216 8.7358 23.1075C8.78348 22.9989 8.85335 22.9002 8.94144 22.8171C9.02953 22.734 9.1341 22.6681 9.24919 22.6231C9.36428 22.5781 9.48764 22.555 9.61221 22.555C9.73679 22.555 9.86014 22.5781 9.97523 22.6231C10.0903 22.6681 10.1949 22.734 10.283 22.8171C10.3711 22.9002 10.4409 22.9989 10.4886 23.1075C10.5363 23.216 10.5608 23.3324 10.5608 23.45V26.2149H25.0975V5.785H10.5714V8.75499C10.5714 8.99236 10.4715 9.22 10.2936 9.38785C10.1157 9.55569 9.8744 9.64999 9.62281 9.64999C9.37122 9.64999 9.12994 9.55569 8.95204 9.38785C8.77414 9.22 8.67419 8.99236 8.67419 8.75499V4.89C8.67559 4.6535 8.77615 4.42713 8.9539 4.26037C9.13165 4.0936 9.37214 4 9.62281 4H26.0514C26.303 4 26.5443 4.09429 26.7222 4.26214C26.9001 4.42998 27 4.65763 27 4.895V27.1099C26.9993 27.2279 26.9739 27.3446 26.9253 27.4532C26.8766 27.5619 26.8057 27.6604 26.7165 27.7431C26.6274 27.8258 26.5218 27.8911 26.4058 27.9352C26.2899 27.9793 26.1658 28.0013 26.0408 27.9999ZM13.6558 21.085L18.3935 16.615L18.4412 16.565C18.5691 16.4244 18.6469 16.2495 18.6638 16.065C18.6694 16.0084 18.6694 15.9515 18.6638 15.895C18.6497 15.6804 18.5536 15.4779 18.3935 15.325L13.7035 10.9C13.6166 10.8123 13.5118 10.7419 13.3955 10.6932C13.2792 10.6444 13.1537 10.6183 13.0264 10.6163C12.8992 10.6142 12.7728 10.6364 12.6548 10.6814C12.5368 10.7264 12.4296 10.7934 12.3397 10.8783C12.2497 10.9632 12.1787 11.0643 12.131 11.1756C12.0833 11.2869 12.0598 11.4062 12.0619 11.5262C12.0641 11.6463 12.0918 11.7647 12.1435 11.8744C12.1952 11.9842 12.2697 12.083 12.3627 12.165L15.4364 15.065H4.94862C4.69703 15.065 4.45574 15.1593 4.27784 15.3271C4.09994 15.495 4 15.7226 4 15.96C4 16.1973 4.09994 16.425 4.27784 16.5928C4.45574 16.7607 4.69703 16.855 4.94862 16.855H15.447L12.315 19.82C12.222 19.902 12.1475 20.0008 12.0958 20.1105C12.0441 20.2202 12.0164 20.3387 12.0142 20.4587C12.0121 20.5788 12.0356 20.698 12.0833 20.8093C12.131 20.9207 12.202 21.0218 12.292 21.1067C12.3819 21.1916 12.4891 21.2585 12.6071 21.3036C12.7251 21.3486 12.8515 21.3707 12.9787 21.3687C13.106 21.3667 13.2315 21.3405 13.3478 21.2918C13.4641 21.243 13.5689 21.1727 13.6558 21.085Z" fill="white"/>
+                </svg>
+
+              </a>
+            </div>
+          </div>
+        </header>
+        <!-- header END -->
+        <!-- mailing BEGIN -->
+        <div class="mailing">
+          <div class="mailing__nav-ob mailing__nav-ob--noshadow">
+            <div class="mailing__nav-wrap js-mailing__nav-wrap">
+              <div class="mailing__list">
+                <div class="mailing__list-item mailing-item is-active" data-id="mailing-1">
+                  <div class="mailing-item__n-date">
+                    <span class="white">№128</span> <span>01.12.20</span>
+                  </div>
+                  <div class="mailing-item__row">
+                    <div class="mailing-item__procent">
+                      <img src="images/new/procent.svg" alt="procent">
+                      <span class="white">32%</span>
+                    </div>
+                    <div class="mailing-item__mails">
+                      <img src="images/new/mails.svg" alt="mails">
+                      <span class="white">1925</span>  отпр.
+                    </div>
+                    <div class="mailing-item__type">
+                      <img src="images/new/i-google.svg" alt="google">
+                    </div>
+                  </div>
+                </div>
+                <div class="mailing__list-item mailing-item" data-id="mailing-2">
+                  <div class="mailing-item__n-date">
+                    <span class="white">№128</span> <span>01.12.20</span>
+                  </div>
+                  <div class="mailing-item__row">
+                    <div class="mailing-item__procent">
+                      <img src="images/new/procent.svg" alt="procent">
+                      <span class="white">32%</span>
+                    </div>
+                    <div class="mailing-item__mails">
+                      <img src="images/new/mails.svg" alt="mails">
+                      <span class="white">1925</span>  отпр.
+                    </div>
+                    <div class="mailing-item__type">
+                      <img src="images/new/i-google.svg" alt="google">
+                    </div>
+                  </div>
+                </div>
+                <div class="mailing__list-item mailing-item" data-id="mailing-3">
+                  <div class="mailing-item__n-date">
+                    <span class="white">№128</span> <span>01.12.20</span>
+                  </div>
+                  <div class="mailing-item__row">
+                    <div class="mailing-item__procent">
+                      <img src="images/new/procent.svg" alt="procent">
+                      <span class="white">32%</span>
+                    </div>
+                    <div class="mailing-item__mails">
+                      <img src="images/new/mails.svg" alt="mails">
+                      <span class="white">1925</span>  отпр.
+                    </div>
+                    <div class="mailing-item__type">
+                      <img src="images/new/i-google.svg" alt="google">
+                    </div>
+                  </div>
+                </div>
+                <div class="mailing__list-item mailing-item" data-id="mailing-4">
+                  <div class="mailing-item__n-date">
+                    <span class="white">№128</span> <span>01.12.20</span>
+                  </div>
+                  <div class="mailing-item__row">
+                    <div class="mailing-item__procent">
+                      <img src="images/new/procent.svg" alt="procent">
+                      <span class="white">32%</span>
+                    </div>
+                    <div class="mailing-item__mails">
+                      <img src="images/new/mails.svg" alt="mails">
+                      <span class="white">1925</span>  отпр.
+                    </div>
+                    <div class="mailing-item__type">
+                      <img src="images/new/i-google.svg" alt="google">
+                    </div>
+                  </div>
+                </div>
+                <div class="mailing__list-item mailing-item" data-id="mailing-5">
+                  <div class="mailing-item__n-date">
+                    <span class="white">№128</span> <span>01.12.20</span>
+                  </div>
+                  <div class="mailing-item__row">
+                    <div class="mailing-item__procent">
+                      <img src="images/new/procent.svg" alt="procent">
+                      <span class="white">32%</span>
+                    </div>
+                    <div class="mailing-item__mails">
+                      <img src="images/new/mails.svg" alt="mails">
+                      <span class="white">1925</span>  отпр.
+                    </div>
+                    <div class="mailing-item__type">
+                      <img src="images/new/i-google.svg" alt="google">
+                    </div>
+                  </div>
+                </div>
+                <div class="mailing__list-item mailing-item" data-id="mailing-6">
+                  <div class="mailing-item__n-date">
+                    <span class="white">№128</span> <span>01.12.20</span>
+                  </div>
+                  <div class="mailing-item__row">
+                    <div class="mailing-item__procent">
+                      <img src="images/new/procent.svg" alt="procent">
+                      <span class="white">32%</span>
+                    </div>
+                    <div class="mailing-item__mails">
+                      <img src="images/new/mails.svg" alt="mails">
+                      <span class="white">1925</span>  отпр.
+                    </div>
+                    <div class="mailing-item__type">
+                      <img src="images/new/i-google.svg" alt="google">
+                    </div>
+                  </div>
+                </div>
+                <div class="mailing__list-item mailing-item" data-id="mailing-7">
+                  <div class="mailing-item__n-date">
+                    <span class="white">№128</span> <span>01.12.20</span>
+                  </div>
+                  <div class="mailing-item__row">
+                    <div class="mailing-item__procent">
+                      <img src="images/new/procent.svg" alt="procent">
+                      <span class="white">32%</span>
+                    </div>
+                    <div class="mailing-item__mails">
+                      <img src="images/new/mails.svg" alt="mails">
+                      <span class="white">1925</span>  отпр.
+                    </div>
+                    <div class="mailing-item__type">
+                      <img src="images/new/i-google.svg" alt="google">
+                    </div>
+                  </div>
+                </div>
+                <div class="mailing__list-item mailing-item" data-id="mailing-8">
+                  <div class="mailing-item__n-date">
+                    <span class="white">№128</span> <span>01.12.20</span>
+                  </div>
+                  <div class="mailing-item__row">
+                    <div class="mailing-item__procent">
+                      <img src="images/new/procent.svg" alt="procent">
+                      <span class="white">32%</span>
+                    </div>
+                    <div class="mailing-item__mails">
+                      <img src="images/new/mails.svg" alt="mails">
+                      <span class="white">1925</span>  отпр.
+                    </div>
+                    <div class="mailing-item__type">
+                      <img src="images/new/i-google.svg" alt="google">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mailing__block">
+            <a
+              href="#mailing-1"
+              class="mailing__nav-link--mobile mailing__nav-link is-active"
+              >Процесс рассылки №3</a
+            >
+            <div id="mailing-1" class="mailing__item is-show">
+              <div class="mailing__item-title">Процесс рассылки №3</div>
+              <div class="process mailing__item-process">
+                <div class="process__current" style="width: 60%;">
+                  <span class="icon-send process__current-icon"></span>
+                </div>
+              </div>
+              <div class="mailing__item-description">
+                <div class="mailing__item-line">
+                  Отправлено на: <span class="color--white">3</span>
+                </div>
+                <div class="mailing__item-line">
+                  Статус: <span class="color--yellow">В процессе</span>
+                  <span class="color--white">(69%)</span>
+                </div>
+                <div class="mailing__item-line">
+                  Загружено email: <span class="color--white">53</span>
+                </div>
+                <div class="mailing__item-line">
+                  Загружено доменов: <span class="color--white">3</span>
+                </div>
+              </div>
+              <div class="post-blocks">
+                <div class="post-blocks__item">
+                  <div class="post-blocks__img">
+                    <img src="images/posts/1.svg">
+                  </div>
+                  <div class="post-blocks__pros">
+                    93%
+                  </div>
+                </div>
+                <div class="post-blocks__item">
+                  <div class="post-blocks__img">
+                    <img src="images/posts/2.svg">
+                  </div>
+                  <div class="post-blocks__pros">
+                    24%
+                  </div>
+                </div>
+                <div class="post-blocks__item">
+                  <div class="post-blocks__img">
+                    <img src="images/posts/3.svg">
+                  </div>
+                  <div class="post-blocks__pros">
+                    50%
+                  </div>
+                </div>
+                <div class="post-blocks__item">
+                  <div class="post-blocks__img">
+                    <img src="images/posts/4.svg">
+                  </div>
+                  <div class="post-blocks__pros">
+                    93%
+                  </div>
+                </div>
+                <div class="post-blocks__item">
+                  <div class="post-blocks__img">
+                    <img src="images/posts/5.svg">
+                  </div>
+                  <div class="post-blocks__pros">
+                    100%
+                  </div>
+                </div>
+                <div class="post-blocks__item">
+                  <div class="post-blocks__img">
+                    <img src="images/posts/6.svg">
+                  </div>
+                  <div class="post-blocks__pros">
+                    %
+                  </div>
+                </div>
+                <div class="post-blocks__item">
+                  <div class="post-blocks__img">
+                    <img src="images/posts/7.svg">
+                  </div>
+                  <div class="post-blocks__pros">
+                    0%
+                  </div>
+                </div>
+
+              </div>
+              <a class="mailing__item-stop">Остановить рассылку</a>
+            </div>
+            <a
+              href="#mailing-2"
+              class="mailing__nav-link--mobile mailing__nav-link"
+              >Процесс рассылки №2</a
+            >
+            <div id="mailing-2" class="mailing__item">
+              <div class="mailing__item-title">Процесс рассылки №2</div>
+              <div class="process mailing__item-process">
+                <div class="process__current" style="width: 40%;">
+                  <span class="icon-send process__current-icon"></span>
+                </div>
+              </div>
+              <div class="mailing__item-description">
+                <div class="mailing__item-line">
+                  Отправлено на: <span class="color--white">1</span>
+                </div>
+                <div class="mailing__item-line">
+                  Статус: <span class="color--yellow">В процессе</span>
+                  <span class="color--white">(40%)</span>
+                </div>
+                <div class="mailing__item-line">
+                  Загружено email: <span class="color--white">40</span>
+                </div>
+                <div class="mailing__item-line">
+                  Загружено доменов: <span class="color--white">5</span>
+                </div>
+              </div>
+              <div class="post-blocks">
+                <div class="post-blocks__item">
+                  <div class="post-blocks__img">
+                    <img src="images/posts/1.svg">
+                  </div>
+                  <div class="post-blocks__pros">
+                    93%
+                  </div>
+                </div>
+                <div class="post-blocks__item">
+                  <div class="post-blocks__img">
+                    <img src="images/posts/2.svg">
+                  </div>
+                  <div class="post-blocks__pros">
+                    24%
+                  </div>
+                </div>
+                <div class="post-blocks__item">
+                  <div class="post-blocks__img">
+                    <img src="images/posts/3.svg">
+                  </div>
+                  <div class="post-blocks__pros">
+                    50%
+                  </div>
+                </div>
+                <div class="post-blocks__item">
+                  <div class="post-blocks__img">
+                    <img src="images/posts/6.svg">
+                  </div>
+                  <div class="post-blocks__pros">
+                    93%
+                  </div>
+                </div>
+                <div class="post-blocks__item">
+                  <div class="post-blocks__img">
+                    <img src="images/posts/7.svg">
+                  </div>
+                  <div class="post-blocks__pros">
+                    93%
+                  </div>
+                </div>
+
+              </div>
+              <a class="mailing__item-stop">Остановить рассылку</a>
+            </div>
+            <a
+              href="#mailing-3"
+              class="mailing__nav-link--mobile mailing__nav-link"
+              >Процесс рассылки №1</a
+            >
+            <div id="mailing-3" class="mailing__item">
+              <div class="mailing__item-title">Процесс рассылки №1</div>
+              <div class="process mailing__item-process">
+                <div class="process__current" style="width: 30%;">
+                  <span class="icon-send process__current-icon"></span>
+                </div>
+              </div>
+              <div class="mailing__item-description">
+                <div class="mailing__item-line">
+                  Отправлено на: <span class="color--white">2</span>
+                </div>
+                <div class="mailing__item-line">
+                  Статус: <span class="color--yellow">В процессе</span>
+                  <span class="color--white">(60%)</span>
+                </div>
+                <div class="mailing__item-line">
+                  Загружено email: <span class="color--white">80</span>
+                </div>
+                <div class="mailing__item-line">
+                  Загружено доменов: <span class="color--white">4</span>
+                </div>
+              </div>
+              <div class="post-blocks">
+                <div class="post-blocks__item">
+                  <div class="post-blocks__img">
+                    <img src="images/posts/1.svg">
+                  </div>
+                  <div class="post-blocks__pros">
+                    93%
+                  </div>
+                </div>
+                <div class="post-blocks__item">
+                  <div class="post-blocks__img">
+                    <img src="images/posts/2.svg">
+                  </div>
+                  <div class="post-blocks__pros">
+                    24%
+                  </div>
+                </div>
+                
+
+              </div>
+              <a class="mailing__item-stop">Остановить рассылку</a>
+            </div>
+            <a
+              href="#mailing-4"
+              class="mailing__nav-link--mobile mailing__nav-link"
+              >Процесс рассылки №1</a
+            >
+            <div id="mailing-4" class="mailing__item">
+              <div class="mailing__item-title">Процесс рассылки №2</div>
+              <div class="process mailing__item-process">
+                <div class="process__current" style="width: 90%;">
+                  <span class="icon-send process__current-icon"></span>
+                </div>
+              </div>
+              <div class="mailing__item-description">
+                <div class="mailing__item-line">
+                  Отправлено на: <span class="color--white">1</span>
+                </div>
+                <div class="mailing__item-line">
+                  Статус: <span class="color--yellow">В процессе</span>
+                  <span class="color--white">(40%)</span>
+                </div>
+                <div class="mailing__item-line">
+                  Загружено email: <span class="color--white">40</span>
+                </div>
+                <div class="mailing__item-line">
+                  Загружено доменов: <span class="color--white">5</span>
+                </div>
+              </div>
+              <div class="post-blocks">
+                <div class="post-blocks__item">
+                  <div class="post-blocks__img">
+                    <img src="images/posts/1.svg">
+                  </div>
+                  <div class="post-blocks__pros">
+                    93%
+                  </div>
+                </div>
+                <div class="post-blocks__item">
+                  <div class="post-blocks__img">
+                    <img src="images/posts/2.svg">
+                  </div>
+                  <div class="post-blocks__pros">
+                    24%
+                  </div>
+                </div>
+                <div class="post-blocks__item">
+                  <div class="post-blocks__img">
+                    <img src="images/posts/3.svg">
+                  </div>
+                  <div class="post-blocks__pros">
+                    50%
+                  </div>
+                </div>
+                <div class="post-blocks__item">
+                  <div class="post-blocks__img">
+                    <img src="images/posts/4.svg">
+                  </div>
+                  <div class="post-blocks__pros">
+                    93%
+                  </div>
+                </div>
+                <div class="post-blocks__item">
+                  <div class="post-blocks__img">
+                    <img src="images/posts/5.svg">
+                  </div>
+                  <div class="post-blocks__pros">
+                    100%
+                  </div>
+                </div>
+                <div class="post-blocks__item">
+                  <div class="post-blocks__img">
+                    <img src="images/posts/6.svg">
+                  </div>
+                  <div class="post-blocks__pros">
+                    93%
+                  </div>
+                </div>
+                <div class="post-blocks__item">
+                  <div class="post-blocks__img">
+                    <img src="images/posts/7.svg">
+                  </div>
+                  <div class="post-blocks__pros">
+                    93%
+                  </div>
+                </div>
+
+              </div>
+              <a class="mailing__item-stop">Остановить рассылку</a>
+            </div>
+            <a
+              href="#mailing-5"
+              class="mailing__nav-link--mobile mailing__nav-link"
+              >Процесс рассылки №1</a>
+            <div id="mailing-5" class="mailing__item">
+              <div class="mailing__item-title">Процесс рассылки №1</div>
+              <div class="process mailing__item-process">
+                <div class="process__current" style="width: 55%;">
+                  <span class="icon-send process__current-icon"></span>
+                </div>
+              </div>
+              <div class="mailing__item-description">
+                <div class="mailing__item-line">
+                  Отправлено на: <span class="color--white">2</span>
+                </div>
+                <div class="mailing__item-line">
+                  Статус: <span class="color--yellow">В процессе</span>
+                  <span class="color--white">(60%)</span>
+                </div>
+                <div class="mailing__item-line">
+                  Загружено email: <span class="color--white">80</span>
+                </div>
+                <div class="mailing__item-line">
+                  Загружено доменов: <span class="color--white">4</span>
+                </div>
+              </div>
+              <div class="post-blocks">
+                <div class="post-blocks__item">
+                  <div class="post-blocks__img">
+                    <img src="images/posts/1.svg">
+                  </div>
+                  <div class="post-blocks__pros">
+                    93%
+                  </div>
+                </div>
+                <div class="post-blocks__item">
+                  <div class="post-blocks__img">
+                    <img src="images/posts/2.svg">
+                  </div>
+                  <div class="post-blocks__pros">
+                    24%
+                  </div>
+                </div>
+                <div class="post-blocks__item">
+                  <div class="post-blocks__img">
+                    <img src="images/posts/3.svg">
+                  </div>
+                  <div class="post-blocks__pros">
+                    50%
+                  </div>
+                </div>
+                <div class="post-blocks__item">
+                  <div class="post-blocks__img">
+                    <img src="images/posts/4.svg">
+                  </div>
+                  <div class="post-blocks__pros">
+                    93%
+                  </div>
+                </div>
+                <div class="post-blocks__item">
+                  <div class="post-blocks__img">
+                    <img src="images/posts/5.svg">
+                  </div>
+                  <div class="post-blocks__pros">
+                    100%
+                  </div>
+                </div>
+                <div class="post-blocks__item">
+                  <div class="post-blocks__img">
+                    <img src="images/posts/6.svg">
+                  </div>
+                  <div class="post-blocks__pros">
+                    93%
+                  </div>
+                </div>
+                <div class="post-blocks__item">
+                  <div class="post-blocks__img">
+                    <img src="images/posts/7.svg">
+                  </div>
+                  <div class="post-blocks__pros">
+                    93%
+                  </div>
+                </div>
+
+              </div>
+              <a class="mailing__item-stop">Остановить рассылку</a>
+            </div>
+          </div>
+        </div>
+        <!-- mailing END -->
+      </div>
+    </div>
+    <!-- site END -->
+
+    <!-- range slider ↓ -->
+    <script src="js/ion.rangeSlider.min.js?v=204"></script>
+    <!-- date & time picker slider ↓ -->
+    <script src="js/jquery.datetimepicker.full.min.js?v=204"></script>
+
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <!-- main ↓ -->
+    <script src="js/main.js?v=204"></script>
+  </body>
+</html>
