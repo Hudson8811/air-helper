@@ -12,6 +12,29 @@ function copyToBuffer(text){
 }
 function formatBytes(a,b=2){if(0===a)return"0 Bytes";const c=0>b?0:b,d=Math.floor(Math.log(a)/Math.log(1024));return parseFloat((a/Math.pow(1024,d)).toFixed(c))+" "+["Bytes","KB","MB","GB","TB","PB","EB","ZB","YB"][d]}
 
+document.addEventListener("mousewheel", function(event){
+  var target = event.target;
+  if (target.classList.contains('fancybox-slide')){
+    var fancyContainer = document.getElementsByClassName('fancybox-is-open');
+    if (fancyContainer.length){
+      var fancyContent = fancyContainer[0].getElementsByClassName('js-scrollbar');
+      if (fancyContent.length){
+        var position = 0;
+        if (event.wheelDeltaY > 0){
+          position = '+='+event.wheelDeltaY;
+        } else {
+          position = '-='+Math.abs(event.wheelDeltaY);
+        }
+        $('.fancybox-is-open .js-scrollbar').mCustomScrollbar("scrollTo",position,{
+          scrollInertia:0,
+          timeout:0
+        });
+      }
+    }
+
+  }
+});
+
 
 $(document).ready(function () {
   if ($('.js-scrollbar').length > 0){
@@ -19,6 +42,24 @@ $(document).ready(function () {
       axis:"y"
     });
   }
+
+  $("body").on("click", function (event) {
+    if (($(event.target).hasClass('sender__checkbox') || $(event.target).hasClass('sender__text')) && $(event.target).parents('.checkbox-list').length > 0){
+      if ($(event.target).parents('.checkbox-list').find('input[type="radio"]').length > 0){
+        //event.preventDefault();
+      } else {
+        event.preventDefault();
+      }
+      var value = '';
+      if ($(event.target).hasClass('sender__checkbox')){
+        value = $(event.target).find('.sender__text').text();
+      } else {
+        value = $(event.target).text();
+      }
+      $('.checkbox-list .checkbox-list__title').text(value);
+      $(event.target).parents('.checkbox-list__dropdown').hide();
+    }
+  });
 
   $("body").on("click", ".checkbox-changer__title", function () {
     $(this).siblings(".checkbox-changer__dropdown").toggle();

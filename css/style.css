@@ -4029,10 +4029,11 @@ button {
 }
 
 
-#faq_popup{
+.fancybox-active{
+    overflow: hidden;
 }
-.top-modal{
-    margin-top: 2vh;
+.top-modal .fancybox-slide{
+    padding-top: 2.5vh;
 }
 .top-modal .fancybox-slide::before{
     display: none;
