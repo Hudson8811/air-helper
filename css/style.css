@@ -4030,7 +4030,12 @@ button {
 
 
 #faq_popup{
-    max-height: 340px;
+}
+.top-modal{
+    margin-top: 2vh;
+}
+.top-modal .fancybox-slide::before{
+    display: none;
 }
 
 
