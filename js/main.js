@@ -10,6 +10,8 @@ function copyToBuffer(text){
         })
   }
 }
+function formatBytes(a,b=2){if(0===a)return"0 Bytes";const c=0>b?0:b,d=Math.floor(Math.log(a)/Math.log(1024));return parseFloat((a/Math.pow(1024,d)).toFixed(c))+" "+["Bytes","KB","MB","GB","TB","PB","EB","ZB","YB"][d]}
+
 
 $(document).ready(function () {
   if ($('.js-scrollbar').length > 0){
@@ -17,6 +19,19 @@ $(document).ready(function () {
       axis:"y"
     });
   }
+
+  $("body").on("click", ".checkbox-changer__title", function () {
+    $(this).siblings(".checkbox-changer__dropdown").toggle();
+  });
+
+  $("body").on("click", ".checkbox-changer__dropdown-item", function () {
+    var text = $(this).text();
+    $(this).addClass('active').siblings(".checkbox-changer__dropdown-item").removeClass('active');
+    $(this).parents('.checkbox-changer__dropdown').hide();
+    $(this).parents('.checkbox-changer').siblings("label").find('input').val(text);
+    $(this).parents('.checkbox-changer__dropdown').siblings(".checkbox-changer__title").text(text);
+
+  });
 
   $("body").on("click", ".checkbox-list__title", function () {
     $(this).siblings(".checkbox-list__dropdown").toggle();
@@ -58,6 +73,7 @@ $(document).ready(function () {
   // file upload new
   $(".js-upload-file").on("change", function () {
     var splittedFakePath = this.value.split("\\");
+    var filesize = this.files[0].size;
     $(this).parents('.s-files__item').addClass('active');
 
     $(this)
@@ -67,7 +83,7 @@ $(document).ready(function () {
     $(this)
         .siblings(".s-files__result")
         .find(".s-files__fileinfo")
-        .html('<span>34 получателя</span> <span>342 KB</span>');
+        .html('<span>34 Domain</span> <span>'+formatBytes(filesize, 0)+'</span>');
 
   });
 
