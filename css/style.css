@@ -3830,7 +3830,7 @@ button {
     max-width: 100%;
     border-radius: 8px;
     max-height: 95vh;
-
+    display: none;
 }
 .sender-modal__inner{
     padding: 32px;
