@@ -1684,8 +1684,10 @@ button {
     margin: 0 auto;
     padding: 0 40px;
 }
-.site--w1024{
+.site__inner-w1024{
     max-width: 1104px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .site.no_logo{
