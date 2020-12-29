@@ -3545,7 +3545,6 @@ button {
 .s-files__item--ignore{
     border: none;
     background: transparent;
-    flex-grow: 0;
 }
 
 .s-files__item--ignore:hover{
